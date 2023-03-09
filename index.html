@@ -1,0 +1,1705 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="utf-8">
+    <title>MacGill | Home</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="Cartzilla - Bootstrap E-commerce Template">
+    <meta name="keywords" content="bootstrap, shop, e-commerce, market, modern, responsive,  business, mobile, bootstrap, html5, css3, js, gallery, slider, touch, creative, clean">
+    <meta name="author" content="Createx Studio">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/logo/mgil-favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/logo/mgil-favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logo/mgil-favicon.ico">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" color="#fe6a6a" href="safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Vendor Styles including: Font Icons, Plugins, etc.-->
+    <link rel="stylesheet" media="screen" href="vendor/simplebar/dist/simplebar.min.css"/>
+    <link rel="stylesheet" media="screen" href="vendor/tiny-slider/dist/tiny-slider.css"/>
+    <link rel="stylesheet" media="screen" href="vendor/drift-zoom/dist/drift-basic.min.css"/>
+    <link rel="stylesheet" media="screen" href="vendor/lightgallery/css/lightgallery-bundle.min.css"/>
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="css/theme.min.css">
+  </head>
+  <!-- Body-->
+  <body class="handheld-toolbar-enabled">
+    <!-- Sign in / sign up modal-->
+    <div class="modal fade" id="signin-modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-secondary">
+            <ul class="nav nav-tabs card-header-tabs" role="tablist">
+              <li class="nav-item"><a class="nav-link fw-medium active" href="#signin-tab" data-bs-toggle="tab" role="tab" aria-selected="true"><i class="ci-unlocked me-2 mt-n1"></i>Sign in</a></li>
+              <li class="nav-item"><a class="nav-link fw-medium" href="#signup-tab" data-bs-toggle="tab" role="tab" aria-selected="false"><i class="ci-user me-2 mt-n1"></i>Sign up</a></li>
+            </ul>
+            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body tab-content py-4">
+            <form class="needs-validation tab-pane fade show active" autocomplete="off" novalidate id="signin-tab">
+              <div class="mb-3">
+                <label class="form-label" for="si-email">Email address</label>
+                <input class="form-control" type="email" id="si-email" placeholder="johndoe@example.com" required>
+                <div class="invalid-feedback">Please provide a valid email address.</div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="si-password">Password</label>
+                <div class="password-toggle">
+                  <input class="form-control" type="password" id="si-password" required>
+                  <label class="password-toggle-btn" aria-label="Show/hide password">
+                    <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="mb-3 d-flex flex-wrap justify-content-between">
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="checkbox" id="si-remember">
+                  <label class="form-check-label" for="si-remember">Remember me</label>
+                </div><a class="fs-sm" href="javascript:;">Forgot password?</a>
+              </div>
+              <button class="btn btn-primary btn-shadow d-block w-100" type="submit">Sign in</button>
+            </form>
+            <form class="needs-validation tab-pane fade" autocomplete="off" novalidate id="signup-tab">
+              <div class="mb-3">
+                <label class="form-label" for="su-name">Full name</label>
+                <input class="form-control" type="text" id="su-name" placeholder="John Doe" required>
+                <div class="invalid-feedback">Please fill in your name.</div>
+              </div>
+              <div class="mb-3">
+                <label for="su-email">Email address</label>
+                <input class="form-control" type="email" id="su-email" placeholder="johndoe@example.com" required>
+                <div class="invalid-feedback">Please provide a valid email address.</div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="su-password">Password</label>
+                <div class="password-toggle">
+                  <input class="form-control" type="password" id="su-password" required>
+                  <label class="password-toggle-btn" aria-label="Show/hide password">
+                    <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="su-password-confirm">Confirm password</label>
+                <div class="password-toggle">
+                  <input class="form-control" type="password" id="su-password-confirm" required>
+                  <label class="password-toggle-btn" aria-label="Show/hide password">
+                    <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"></span>
+                  </label>
+                </div>
+              </div>
+              <button class="btn btn-primary btn-shadow d-block w-100" type="submit">Sign up</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main class="page-wrapper">
+      
+      <!-- Navbar Electronics Store-->
+      <header class="shadow-sm">
+        <!-- Topbar-->
+        <div class="topbar topbar-dark bg-dark">
+          <div class="container">
+            <div>
+              <!-- <div class="topbar-text dropdown disable-autohide"><a class="topbar-link dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown"><img class="me-2" src="img/flags/en.png" width="20" alt="English">Eng / $</a>
+                <ul class="dropdown-menu my-1">
+                  <li class="dropdown-item">
+                    <select class="form-select form-select-sm">
+                      <option value="usd">$ USD</option>
+                      <option value="eur">€ EUR</option>
+                      <option value="ukp">£ UKP</option>
+                      <option value="jpy">¥ JPY</option>
+                    </select>
+                  </li>
+                  <li><a class="dropdown-item pb-1" href="javascript:;"><img class="me-2" src="img/flags/fr.png" width="20" alt="Français">Français</a></li>
+                  <li><a class="dropdown-item pb-1" href="javascript:;"><img class="me-2" src="img/flags/de.png" width="20" alt="Deutsch">Deutsch</a></li>
+                  <li><a class="dropdown-item" href="javascript:;"><img class="me-2" src="img/flags/it.png" width="20" alt="Italiano">Italiano</a></li>
+                </ul>
+              </div>
+              <div class="topbar-text text-nowrap d-none d-md-inline-block border-start border-light ps-3 ms-3"><span class="text-muted me-1">Available 24/7 at</span><a class="topbar-link" href="tel:00331697720">(00) 33 169 7720</a></div> -->
+              <div class="topbar-text text-nowrap d-none d-md-inline-block">Welcome to MacGill School Nurse Supplies!</div>
+            </div>
+            <div class="topbar-text dropdown d-md-none ms-auto"><a class="topbar-link dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown">Wishlist / Compare / Track</a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="javascript:;"><i class="ci-heart text-muted me-2"></i>Wishlist (3)</a></li>
+                <li><a class="dropdown-item" href="javascript:;"><i class="ci-compare text-muted me-2"></i>Compare (3)</a></li>
+                <li><a class="dropdown-item" href="javascript:;"><i class="ci-star text-muted me-2"></i>My Shopping List</a></li>
+                <!-- <li><a class="dropdown-item" href="order-tracking.html"><i class="ci-location text-muted me-2"></i>Order tracking</a></li> -->
+              </ul>
+            </div>
+            <div class="d-none d-md-block ms-3 text-nowrap">
+              <a class="topbar-link d-none d-md-inline-block" href="javascript:;"><i class="ci-heart mt-n1"></i>Wishlist (3)</a>
+              <a class="topbar-link ms-3 ps-3 border-start border-light d-none d-md-inline-block" href="javascript:;"><i class="ci-compare mt-n1"></i>Compare (3)</a>
+              <a class="topbar-link ms-3 border-start border-light ps-3 d-none d-md-inline-block" href="javascript:;"><i class="ci-star mt-n1"></i>My Shopping List</a>
+              <!-- <a class="topbar-link ms-3 border-start border-light ps-3 d-none d-md-inline-block" href="order-tracking.html"><i class="ci-location mt-n1"></i>Order tracking</a> -->
+            </div>
+          </div>
+        </div>
+        <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
+        <div class="navbar-sticky bg-light">
+          <div class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+              <a class="navbar-brand d-none d-sm-block me-3 flex-shrink-0" href="index.html">
+                <img class="w-100" src="images/logo/logo-macgill.png" alt="Logo">
+              </a>
+              <a class="navbar-brand d-sm-none me-2" href="index.html">
+                <img src="images/logo/logo-macgill.png" width="100" alt="Logo">
+              </a>
+              <!-- Search-->
+              <div class="input-group d-none d-lg-flex flex-nowrap mx-4"><i class="ci-search position-absolute top-50 start-0 translate-middle-y ms-3"></i>
+                <input class="form-control rounded-start w-100" type="text" placeholder="Search for products">
+                <select class="form-select flex-shrink-0" style="width: 10.5rem;">
+                  <option>All categories</option>
+                  <option>COVID-19</option>
+                  <option>A+ Choice Products</option>
+                  <option>Instruments</option>
+                </select>
+              </div>
+              <!-- Toolbar-->
+              <div class="navbar-toolbar d-flex flex-shrink-0 align-items-center">
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"><span class="navbar-toggler-icon"></span></button> -->
+                <a class="navbar-tool navbar-stuck-toggler" href="javascript:;"><span class="navbar-tool-tooltip">Toggle menu</span>
+                  <div class="navbar-tool-icon-box d-flex align-items-center justify-content-center"><i class="navbar-tool-icon ci-menu"></i></div>
+                </a>
+                <a class="navbar-tool ms-1 ms-lg-0 me-n1 me-lg-2" href="#signin-modal" data-bs-toggle="modal">
+                  <div class="navbar-tool-icon-box d-flex align-items-center justify-content-center"><i class="navbar-tool-icon ci-user"></i></div>
+                  <div class="navbar-tool-text ms-n3"><small>Hello, Sign in</small>My Account</div>
+                </a>
+                <div class="navbar-tool dropdown ms-3">
+                  <a class="navbar-tool-icon-box d-flex align-items-center justify-content-center bg-secondary dropdown-toggle" href="javascript:;">
+                    <span class="navbar-tool-label">4</span>
+                    <i class="navbar-tool-icon ci-cart"></i>
+                  </a>
+                  <a class="navbar-tool-text" href="javascript:;"><small>My Cart</small>$1,247.00</a>
+                  <!-- Cart dropdown-->
+                  <div class="dropdown-menu dropdown-menu-end">
+                    <div class="widget widget-cart px-3 pt-2 pb-3" style="width: 20rem;">
+                      <div style="height: 15rem;" data-simplebar data-simplebar-auto-hide="false">
+                        <div class="widget-cart-item pb-2 border-bottom">
+                          <button class="btn-close text-danger" type="button" aria-label="Remove"><span aria-hidden="true">&times;</span></button>
+                          <div class="d-flex align-items-center"><a class="d-block flex-shrink-0" href="javascript:;"><img src="images/product/product-1.png" width="64" alt="Product"></a>
+                            <div class="ps-2">
+                              <h6 class="widget-product-title"><a href="javascript:;">Kids KN95 Masks, Black, 50/Box</a></h6>
+                              <div class="widget-product-meta"><span class="text-accent me-2">$198.<small>00</small></span><span class="text-muted">x 1</span></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="widget-cart-item py-2 border-bottom">
+                          <button class="btn-close text-danger" type="button" aria-label="Remove"><span aria-hidden="true">&times;</span></button>
+                          <div class="d-flex align-items-center"><a class="d-block flex-shrink-0" href="javascript:;"><img src="images/product/product-2.png" width="64" alt="Product"></a>
+                            <div class="ps-2">
+                              <h6 class="widget-product-title"><a href="javascript:;">Dial® Liquid Soap, 7.5 Oz. Pump</a></h6>
+                              <div class="widget-product-meta"><span class="text-accent me-2">$98.<small>00</small></span><span class="text-muted">x 1</span></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="widget-cart-item pb-2 border-bottom">
+                          <button class="btn-close text-danger" type="button" aria-label="Remove"><span aria-hidden="true">&times;</span></button>
+                          <div class="d-flex align-items-center"><a class="d-block flex-shrink-0" href="javascript:;"><img src="images/product/product-1.png" width="64" alt="Product"></a>
+                            <div class="ps-2">
+                              <h6 class="widget-product-title"><a href="javascript:;">Kids KN95 Masks, Black, 50/Box</a></h6>
+                              <div class="widget-product-meta"><span class="text-accent me-2">$198.<small>00</small></span><span class="text-muted">x 1</span></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="widget-cart-item py-2 border-bottom">
+                          <button class="btn-close text-danger" type="button" aria-label="Remove"><span aria-hidden="true">&times;</span></button>
+                          <div class="d-flex align-items-center"><a class="d-block flex-shrink-0" href="javascript:;"><img src="images/product/product-2.png" width="64" alt="Product"></a>
+                            <div class="ps-2">
+                              <h6 class="widget-product-title"><a href="javascript:;">Dial® Liquid Soap, 7.5 Oz. Pump</a></h6>
+                              <div class="widget-product-meta"><span class="text-accent me-2">$98.<small>00</small></span><span class="text-muted">x 1</span></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-wrap justify-content-between align-items-center py-3">
+                        <div class="fs-sm me-2 py-2"><span class="text-muted">Subtotal:</span><span class="text-accent fs-base ms-1">$1,247.<small>00</small></span></div><a class="btn btn-outline-secondary btn-sm" href="javascript:;">Expand cart<i class="ci-arrow-right ms-1 me-n1"></i></a>
+                      </div><a class="btn btn-primary btn-sm d-block w-100" href="javascript:;"><i class="ci-card me-2 fs-base align-middle"></i>Checkout</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="navbar navbar-expand-lg navbar-light navbar-stuck-menu mt-n2 pt-0 pb-2">
+            <div class="container">
+              <div class="collapse navbar-collapse" id="navbarCollapse">
+                <!-- Search-->
+                <div class="input-group d-lg-none my-3"><i class="ci-search position-absolute top-50 start-0 translate-middle-y ms-3"></i>
+                  <input class="form-control rounded-start" type="text" placeholder="Search for products">
+                </div>
+                <!-- Departments menu-->
+                <ul class="navbar-nav navbar-mega-nav pe-lg-2 me-lg-2">
+                  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-lg-0" href="javascript:;" data-bs-toggle="dropdown" data-bs-auto-close="outside"><i class="ci-menu align-middle mt-n1 me-2"></i>Shop</a>
+                    <ul class="dropdown-menu">
+                      <li class="dropdown mega-dropdown"><a class="dropdown-item" href="javascript:;"><i class="ci-frozen opacity-60 fs-lg mt-n1 me-2"></i>Top Sellers</a></li>
+                      <li class="dropdown mega-dropdown"><a class="dropdown-item" href="javascript:;"><i class="ci-frozen opacity-60 fs-lg mt-n1 me-2"></i>Promos for School Nurse Day 2022</a></li>
+                      <li class="dropdown mega-dropdown"><a class="dropdown-item dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown"><i class="ci-frozen opacity-60 fs-lg mt-n1 me-2"></i>In Stock COVID-19 Supplies</a>
+                        <div class="dropdown-menu p-0">
+                          <div class="d-flex flex-wrap flex-sm-nowrap px-2">
+                            <div class="mega-dropdown-column pt-4 pb-0 py-sm-4 px-3">
+                              <div class="widget widget-links">
+                                <!-- <h6 class="fs-base mb-3">Computers</h6> -->
+                                <ul class="widget-list">
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Covid Tests</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Non-Contact Thermometers</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Cleaning Products</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Gloves</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Hand Sanitizer</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Hand Soap</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Social Distancing</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Personal Protection </a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Hand Washing Education</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <!-- <div class="mega-dropdown-column py-4 px-3">
+                              <div class="widget widget-links">
+                                <h6 class="fs-base mb-3">Accessories</h6>
+                                <ul class="widget-list">
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Monitors</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Bags, Cases &amp; Sleeves</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Batteries</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Charges &amp; Adapters</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Cooling Pads</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Mounts</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Replacement Screens</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Security Locks</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Stands</a></li>
+                                </ul>
+                              </div>
+                            </div> -->
+                            <div class="mega-dropdown-column d-none d-lg-block py-4 text-center"><a class="d-block mb-2" href="javascript:;"><img class="w-50" src="images/img-1.jpg" alt="In Stock COVID-19 Supplies"></a>
+                              <div class="fs-sm mb-3">Starting from <span class='fw-medium'>$9.<small>99</small></span></div><a class="btn btn-primary btn-shadow btn-sm" href="javascript:;">See offers<i class="ci-arrow-right fs-xs ms-1"></i></a>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="dropdown mega-dropdown"><a class="dropdown-item dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown"><i class="ci-frozen opacity-60 fs-lg mt-n1 me-2"></i>A+ Choice Products</a>
+                        <div class="dropdown-menu p-0">
+                          <div class="d-flex flex-wrap flex-md-nowrap px-2">
+                            <div class="mega-dropdown-column pt-4 pb-0 py-sm-4 px-3">
+                              <div class="widget widget-links mb-3">
+                                <!-- <h6 class="fs-base mb-3">Smartphones</h6> -->
+                                <ul class="widget-list">
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Bandages</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">First Aid & Wound Care</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Emergency Response</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">General Health</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Paper, Plastic & Linen</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Cleaning & Infection Control</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Gloves & Hand Care</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Thermometry</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Respiratory & CPR</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Diagnostic</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Special Needs</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Education Material</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Furniture</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Hearing & Vision Screening</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="mega-dropdown-column d-none d-lg-block py-4 text-center"><a class="d-block mb-2" href="javascript:;"><img class="" src="images/img-2.jpg" alt="A+ Choice Products"></a>
+                              <div class="fs-sm mb-3">Starting from <span class='fw-medium'>$127.<small>00</small></span></div><a class="btn btn-primary btn-shadow btn-sm" href="javascript:;">See offers<i class="ci-arrow-right fs-xs ms-1"></i></a>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="dropdown mega-dropdown"><a class="dropdown-item dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown"><i class="ci-frozen opacity-60 fs-lg mt-n1 me-2"></i>Web Only</a>
+                        <div class="dropdown-menu p-0">
+                          <div class="d-flex flex-wrap flex-md-nowrap px-2">
+                            <div class="mega-dropdown-column pt-4 pb-0 py-sm-4 px-3">
+                              <div class="widget widget-links">
+                                <ul class="widget-list">
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Emergency Response</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">General Health</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Paper, Plastic & Linen</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Cleaning & Infection Control</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Gloves & Hand Care</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Thermometry</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Respiratory & CPR</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Diagnostic</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Education Material</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Furniture</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Hearing & Vision </a></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="mega-dropdown-column d-none d-lg-block py-4 text-center"><a class="d-block mb-2" href="javascript:;"><img src="images/img-3.jpg" alt="Web Only"></a>
+                              <div class="fs-sm mb-3">Starting from <span class='fw-medium'>$78.<small>00</small></span></div><a class="btn btn-primary btn-shadow btn-sm" href="javascript:;">See offers<i class="ci-arrow-right fs-xs ms-1"></i></a>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="dropdown mega-dropdown"><a class="dropdown-item dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown"><i class="ci-frozen opacity-60 fs-lg mt-n1 me-2"></i>Bandages</a>
+                        <div class="dropdown-menu p-0">
+                          <div class="d-flex flex-wrap flex-md-nowrap px-2">
+                            <div class="mega-dropdown-column pt-4 pb-0 py-sm-4 px-3">
+                              <div class="widget widget-links">
+                                <ul class="widget-list">
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 1</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 2</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 3</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 4</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 5</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 6</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 7</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 8</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 9</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 10</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="mega-dropdown-column py-4 px-3">
+                              <div class="widget widget-links">
+                                <ul class="widget-list">
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 1</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 2</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 3</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 4</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 5</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 6</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 7</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 8</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 9</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 10</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="mega-dropdown-column d-none d-lg-block py-4 text-center"><a class="d-block mb-2" href="javascript:;"><img src="images/img-4.jpg" alt="Bandages"></a>
+                              <div class="fs-sm mb-3">Starting from <span class='fw-medium'>$210.<small>00</small></span></div><a class="btn btn-primary btn-shadow btn-sm" href="javascript:;">See offers<i class="ci-arrow-right fs-xs ms-1"></i></a>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="dropdown mega-dropdown"><a class="dropdown-item dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown"><i class="ci-frozen opacity-60 fs-lg mt-n1 me-2"></i>First Aid & Wound Care</a>
+                        <div class="dropdown-menu p-0">
+                          <div class="d-flex flex-wrap flex-md-nowrap px-2">
+                            <div class="mega-dropdown-column pt-4 pb-0 py-sm-4 px-3">
+                              <div class="widget widget-links">
+                                <ul class="widget-list">
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 1</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 2</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 3</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 4</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 5</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 6</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 7</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 8</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 9</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 10</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="mega-dropdown-column d-none d-lg-block py-4 text-center"><a class="d-block mb-2" href="javascript:;"><img src="images/img-5.png" alt="First Aid & Wound Care"></a>
+                              <div class="fs-sm mb-3">Starting from <span class='fw-medium'>$35.<small>99</small></span></div><a class="btn btn-primary btn-shadow btn-sm" href="javascript:;">See offers<i class="ci-arrow-right fs-xs ms-1"></i></a>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="dropdown mega-dropdown"><a class="dropdown-item dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown"><i class="ci-frozen opacity-60 fs-lg mt-n1 me-2"></i>Emergency Response & Safety</a>
+                        <div class="dropdown-menu p-0">
+                          <div class="d-flex flex-wrap flex-md-nowrap px-2">
+                            <div class="mega-dropdown-column py-4 px-3">
+                              <div class="widget widget-links">
+                                <ul class="widget-list">
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 1</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 2</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 3</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 4</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 5</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 6</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 7</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 8</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 9</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 10</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="dropdown mega-dropdown"><a class="dropdown-item dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown"><i class="ci-frozen opacity-60 fs-lg mt-n1 me-2"></i>General Health & Non-Prescription</a>
+                        <div class="dropdown-menu p-0">
+                          <div class="d-flex flex-wrap flex-md-nowrap px-2">
+                            <div class="mega-dropdown-column pt-4 pb-0 py-sm-4 px-3">
+                              <div class="widget widget-links mb-3">
+                                <ul class="widget-list">
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 1</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 2</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 3</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 4</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 5</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 6</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 7</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 8</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 9</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 10</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="mega-dropdown-column d-none d-lg-block py-4 text-center"><a class="d-block mb-2" href="javascript:;"><img src="images/img-6.jpg" alt="General Health & Non-Prescription"></a>
+                              <div class="fs-sm mb-3">Starting from <span class='fw-medium'>$54.<small>00</small></span></div><a class="btn btn-primary btn-shadow btn-sm" href="javascript:;">See offers<i class="ci-arrow-right fs-xs ms-1"></i></a>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="dropdown mega-dropdown"><a class="dropdown-item dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown"><i class="ci-frozen opacity-60 fs-lg mt-n1 me-2"></i>Instruments</a>
+                        <div class="dropdown-menu p-0">
+                          <div class="d-flex flex-wrap flex-md-nowrap px-2">
+                            <div class="mega-dropdown-column pt-4 pb-0 py-sm-4 px-3">
+                              <div class="widget widget-links">
+                                <ul class="widget-list">
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 1</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 2</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 3</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 4</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 5</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 6</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 7</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 8</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 9</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 10</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="mega-dropdown-column d-none d-lg-block py-4 text-center"><a class="d-block mb-2" href="javascript:;"><img src="images/img-7.jpg" alt="Instruments"></a>
+                              <div class="fs-sm mb-3">Starting from <span class='fw-medium'>$19.<small>00</small></span></div><a class="btn btn-primary btn-shadow btn-sm" href="javascript:;">See offers<i class="ci-arrow-right fs-xs ms-1"></i></a>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="dropdown mega-dropdown"><a class="dropdown-item dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown"><i class="ci-frozen opacity-60 fs-lg mt-n1 me-2"></i>Paper, Plastic & Linen</a>
+                        <div class="dropdown-menu p-0">
+                          <div class="d-flex flex-wrap flex-md-nowrap px-2">
+                            <div class="mega-dropdown-column pt-4 pb-0 py-sm-4 px-3">
+                              <div class="widget widget-links">
+                                <ul class="widget-list">
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 1</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 2</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 3</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 4</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 5</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 6</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 7</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 8</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 9</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 10</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <!-- Primary menu-->
+                <ul class="navbar-nav w-100 justify-content-end">
+                  <li class="nav-item active"><a class="nav-link" href="index.html">Home</a>
+                    <!-- <ul class="dropdown-menu">
+                      <li class="dropdown position-static mb-0"><a class="dropdown-item border-bottom py-2" href="home-nft.html"><span class="d-block text-heading">NFT Marketplace<span class="badge bg-danger ms-1">NEW</span></span><small class="d-block text-muted">NFTs, Multi-vendor, Auctions</small></a>
+                        <div class="dropdown-menu h-100 animation-none mt-0 p-3"><a class="d-block" href="home-nft.html" style="width: 250px;"><img src="img/home/preview/th08.jpg" alt="NFT Marketplace"></a></div>
+                      </li>
+                      <li class="dropdown position-static mb-0"><a class="dropdown-item py-2 border-bottom" href="home-fashion-store-v1.html"><span class="d-block text-heading">Fashion Store v.1</span><small class="d-block text-muted">Classic shop layout</small></a>
+                        <div class="dropdown-menu h-100 animation-none mt-0 p-3"><a class="d-block" href="home-fashion-store-v1.html" style="width: 250px;"><img src="img/home/preview/th01.jpg" alt="Fashion Store v.1"></a></div>
+                      </li>
+                      <li class="dropdown position-static mb-0"><a class="dropdown-item py-2 border-bottom" href="home-electronics-store.html"><span class="d-block text-heading">Electronics Store</span><small class="d-block text-muted">Slider + Promo banners</small></a>
+                        <div class="dropdown-menu h-100 animation-none mt-0 p-3"><a class="d-block" href="home-electronics-store.html" style="width: 250px;"><img src="img/home/preview/th03.jpg" alt="Electronics Store"></a></div>
+                      </li>
+                      <li class="dropdown position-static mb-0"><a class="dropdown-item py-2 border-bottom" href="home-marketplace.html"><span class="d-block text-heading">Marketplace</span><small class="d-block text-muted">Multi-vendor, digital goods</small></a>
+                        <div class="dropdown-menu h-100 animation-none mt-0 p-3"><a class="d-block" href="home-marketplace.html" style="width: 250px;"><img src="img/home/preview/th04.jpg" alt="Marketplace"></a></div>
+                      </li>
+                      <li class="dropdown position-static mb-0"><a class="dropdown-item py-2 border-bottom" href="home-grocery-store.html"><span class="d-block text-heading">Grocery Store</span><small class="d-block text-muted">Full width + Side menu</small></a>
+                        <div class="dropdown-menu h-100 animation-none mt-0 p-3"><a class="d-block" href="home-grocery-store.html" style="width: 250px;"><img src="img/home/preview/th06.jpg" alt="Grocery Store"></a></div>
+                      </li>
+                      <li class="dropdown position-static mb-0"><a class="dropdown-item py-2 border-bottom" href="home-food-delivery.html"><span class="d-block text-heading">Food Delivery Service</span><small class="d-block text-muted">Food &amp; Beverages delivery</small></a>
+                        <div class="dropdown-menu h-100 animation-none mt-0 p-3"><a class="d-block" href="home-food-delivery.html" style="width: 250px;"><img src="img/home/preview/th07.jpg" alt="Food Delivery Service"></a></div>
+                      </li>
+                      <li class="dropdown position-static mb-0"><a class="dropdown-item py-2 border-bottom" href="home-fashion-store-v2.html"><span class="d-block text-heading">Fashion Store v.2</span><small class="d-block text-muted">Slider + Featured categories</small></a>
+                        <div class="dropdown-menu h-100 animation-none mt-0 p-3"><a class="d-block" href="home-fashion-store-v2.html" style="width: 250px;"><img src="img/home/preview/th02.jpg" alt="Fashion Store v.2"></a></div>
+                      </li>
+                      <li class="dropdown position-static mb-0"><a class="dropdown-item py-2" href="home-single-store.html"><span class="d-block text-heading">Single Product Store</span><small class="d-block text-muted">Single product / mono brand</small></a>
+                        <div class="dropdown-menu h-100 animation-none mt-0 p-3"><a class="d-block" href="home-single-store.html" style="width: 250px;"><img src="img/home/preview/th05.jpg" alt="Single Product / Brand Store"></a></div>
+                      </li>
+                    </ul> -->
+                  </li>
+                  <li class="nav-item"><a class="nav-link" href="javascript:;">About MacGill</a>
+                  <li class="nav-item"><a class="nav-link" href="blog-main.html">Blog</a>
+                  <li class="nav-item"><a class="nav-link" href="javascript:;">Resources</a>
+                  <li class="nav-item"><a class="nav-link" href="javascript:;">Shipping</a>
+                  <li class="nav-item"><a class="nav-link" href="javascript:;">Request a Catalog</a>
+                  <li class="nav-item"><a class="nav-link" href="javascript:;">Contact</a>
+                  <!-- <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown">Shop</a>
+                    <div class="dropdown-menu p-0">
+                      <div class="d-flex flex-wrap flex-sm-nowrap px-2">
+                        <div class="mega-dropdown-column pt-1 pt-lg-4 pb-4 px-2 px-lg-3">
+                          <div class="widget widget-links mb-4">
+                            <h6 class="fs-base mb-3">Shop layouts</h6>
+                            <ul class="widget-list">
+                              <li class="widget-list-item"><a class="widget-list-link" href="shop-grid-ls.html">Shop Grid - Left Sidebar</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="shop-grid-rs.html">Shop Grid - Right Sidebar</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="shop-grid-ft.html">Shop Grid - Filters on Top</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="shop-list-ls.html">Shop List - Left Sidebar</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="shop-list-rs.html">Shop List - Right Sidebar</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="shop-list-ft.html">Shop List - Filters on Top</a></li>
+                            </ul>
+                          </div>
+                          <div class="widget widget-links mb-4">
+                            <h6 class="fs-base mb-3">Marketplace</h6>
+                            <ul class="widget-list">
+                              <li class="widget-list-item"><a class="widget-list-link" href="marketplace-category.html">Category Page</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="marketplace-single.html">Single Item Page</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="marketplace-vendor.html">Vendor Page</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="marketplace-cart.html">Cart</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="marketplace-checkout.html">Checkout</a></li>
+                            </ul>
+                          </div>
+                          <div class="widget widget-links">
+                            <h6 class="fs-base mb-3">Grocery store</h6>
+                            <ul class="widget-list">
+                              <li class="widget-list-item"><a class="widget-list-link" href="grocery-catalog.html">Product Catalog</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="grocery-single.html">Single Product Page</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="grocery-checkout.html">Checkout</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="mega-dropdown-column pt-1 pt-lg-4 pb-4 px-2 px-lg-3">
+                          <div class="widget widget-links mb-4">
+                            <h6 class="fs-base mb-3">Food Delivery</h6>
+                            <ul class="widget-list">
+                              <li class="widget-list-item"><a class="widget-list-link" href="food-delivery-category.html">Category Page</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="food-delivery-single.html">Single Item (Restaurant)</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="food-delivery-cart.html">Cart (Your Order)</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="food-delivery-checkout.html">Checkout (Address &amp; Payment)</a></li>
+                            </ul>
+                          </div>
+                          <div class="widget widget-links">
+                            <h6 class="fs-base mb-3">NFT Marketplace<span class="badge bg-danger ms-1">NEW</span></h6>
+                            <ul class="widget-list">
+                              <li class="widget-list-item"><a class="widget-list-link" href="nft-catalog-v1.html">Catalog v.1</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="nft-catalog-v2.html">Catalog v.2</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="nft-single-auction-live.html">Single Item - Auction Live</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="nft-single-auction-ended.html">Single Item - Auction Ended</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="nft-single-buy.html">Single Item - Buy Now</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="nft-vendor.html">Vendor Page</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="nft-connect-wallet.html">Connect Wallet</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="nft-create-item.html">Create New Item</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="mega-dropdown-column pt-1 pt-lg-4 px-2 px-lg-3">
+                          <div class="widget widget-links mb-4">
+                            <h6 class="fs-base mb-3">Shop pages</h6>
+                            <ul class="widget-list">
+                              <li class="widget-list-item"><a class="widget-list-link" href="shop-categories.html">Shop Categories</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="product-detail.html">Product Page v.1</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="shop-single-v2.html">Product Page v.2</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="shop-cart.html">Cart</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="checkout-details.html">Checkout - Details</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="checkout-shipping.html">Checkout - Shipping</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="checkout-payment.html">Checkout - Payment</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="checkout-review.html">Checkout - Review</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="checkout-complete.html">Checkout - Complete</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="order-tracking.html">Order Tracking</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="comparison.html">Product Comparison</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li> -->
+                  <!-- <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown" data-bs-auto-close="outside">Account</a>
+                    <ul class="dropdown-menu">
+                      <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown">Shop User Account</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="account-orders.html">Orders History</a></li>
+                          <li><a class="dropdown-item" href="account-profile.html">Profile Settings</a></li>
+                          <li><a class="dropdown-item" href="account-address.html">Account Addresses</a></li>
+                          <li><a class="dropdown-item" href="account-payment.html">Payment Methods</a></li>
+                          <li><a class="dropdown-item" href="account-wishlist.html">Wishlist</a></li>
+                          <li><a class="dropdown-item" href="account-tickets.html">My Tickets</a></li>
+                          <li><a class="dropdown-item" href="account-single-ticket.html">Single Ticket</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown">Vendor Dashboard</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="dashboard-settings.html">Settings</a></li>
+                          <li><a class="dropdown-item" href="dashboard-purchases.html">Purchases</a></li>
+                          <li><a class="dropdown-item" href="dashboard-favorites.html">Favorites</a></li>
+                          <li><a class="dropdown-item" href="dashboard-sales.html">Sales</a></li>
+                          <li><a class="dropdown-item" href="dashboard-products.html">Products</a></li>
+                          <li><a class="dropdown-item" href="dashboard-add-new-product.html">Add New Product</a></li>
+                          <li><a class="dropdown-item" href="dashboard-payouts.html">Payouts</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown">NFT Marketplace<span class="badge bg-danger ms-1">NEW</span></a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="nft-account-settings.html">Profile Settings</a></li>
+                          <li><a class="dropdown-item" href="nft-account-payouts.html">Wallet &amp; Payouts</a></li>
+                          <li><a class="dropdown-item" href="nft-account-my-items.html">My Items</a></li>
+                          <li><a class="dropdown-item" href="nft-account-my-collections.html">My Collections</a></li>
+                          <li><a class="dropdown-item" href="nft-account-favorites.html">Favorites</a></li>
+                          <li><a class="dropdown-item" href="nft-account-notifications.html">Notifications</a></li>
+                        </ul>
+                      </li>
+                      <li><a class="dropdown-item" href="account-signin.html">Sign In / Sign Up</a></li>
+                      <li><a class="dropdown-item" href="account-password-recovery.html">Password Recovery</a></li>
+                    </ul>
+                  </li> -->
+                  <!-- <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown" data-bs-auto-close="outside">Pages</a>
+                    <ul class="dropdown-menu">
+                      <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown">Navbar Variants</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="navbar-1-level-light.html">1 Level Light</a></li>
+                          <li><a class="dropdown-item" href="navbar-1-level-dark.html">1 Level Dark</a></li>
+                          <li><a class="dropdown-item" href="navbar-2-level-light.html">2 Level Light</a></li>
+                          <li><a class="dropdown-item" href="navbar-2-level-dark.html">2 Level Dark</a></li>
+                          <li><a class="dropdown-item" href="navbar-3-level-light.html">3 Level Light</a></li>
+                          <li><a class="dropdown-item" href="navbar-3-level-dark.html">3 Level Dark</a></li>
+                          <li><a class="dropdown-item" href="home-electronics-store.html">Electronics Store</a></li>
+                          <li><a class="dropdown-item" href="home-marketplace.html">Marketplace</a></li>
+                          <li><a class="dropdown-item" href="home-grocery-store.html">Side Menu (Grocery)</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                      <li><a class="dropdown-item" href="contacts.html">Contacts</a></li>
+                      <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown">Help Center</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="help-topics.html">Help Topics</a></li>
+                          <li><a class="dropdown-item" href="help-single-topic.html">Single Topic</a></li>
+                          <li><a class="dropdown-item" href="help-submit-request.html">Submit a Request</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown">404 Not Found</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="404-simple.html">404 - Simple Text</a></li>
+                          <li><a class="dropdown-item" href="404-illustration.html">404 - Illustration</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="sticky-footer.html">Sticky Footer Demo</a></li>
+                    </ul>
+                  </li> -->
+                  <!-- <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown" data-bs-auto-close="outside">Blog</a>
+                    <ul class="dropdown-menu">
+                      <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown">Blog List Layouts</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="blog-list-sidebar.html">List with Sidebar</a></li>
+                          <li><a class="dropdown-item" href="blog-list.html">List no Sidebar</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown">Blog Grid Layouts</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="blog-grid-sidebar.html">Grid with Sidebar</a></li>
+                          <li><a class="dropdown-item" href="blog-grid.html">Grid no Sidebar</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown">Single Post Layouts</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="blog-single-sidebar.html">Article with Sidebar</a></li>
+                          <li><a class="dropdown-item" href="blog-single.html">Article no Sidebar</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li> -->
+                  <!-- <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown">Docs / Components</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="docs/dev-setup.html">
+                          <div class="d-flex">
+                            <div class="lead text-muted pt-1"><i class="ci-book"></i></div>
+                            <div class="ms-2"><span class="d-block text-heading">Documentation</span><small class="d-block text-muted">Kick-start customization</small></div>
+                          </div></a></li>
+                      <li class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="components/typography.html">
+                          <div class="d-flex">
+                            <div class="lead text-muted pt-1"><i class="ci-server"></i></div>
+                            <div class="ms-2"><span class="d-block text-heading">Components<span class="badge bg-info ms-2">40+</span></span><small class="d-block text-muted">Faster page building</small></div>
+                          </div></a></li>
+                      <li class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="docs/changelog.html">
+                          <div class="d-flex">
+                            <div class="lead text-muted pt-1"><i class="ci-edit"></i></div>
+                            <div class="ms-2"><span class="d-block text-heading">Changelog<span class="badge bg-success ms-2">v2.5.1</span></span><small class="d-block text-muted">Regular updates</small></div>
+                          </div></a></li>
+                      <li class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="mailto:support@createx.studio">
+                          <div class="d-flex">
+                            <div class="lead text-muted pt-1"><i class="ci-help"></i></div>
+                            <div class="ms-2"><span class="d-block text-heading">Support</span><small class="d-block text-muted">support@createx.studio</small></div>
+                          </div></a></li>
+                    </ul>
+                  </li> -->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- Hero (Banners + Slider)-->
+      <section class="bg-secondary py-4 pt-md-5 heroSection">
+        <div class="container py-xl-2 h-100">
+          <div class="row h-100">
+            <!-- Slider     -->
+            <div class="col-xl-9 pt-xl-4 order-xl-2 h-100">
+              <div class="tns-carousel h-100">
+                <div class="tns-carousel-inner" data-carousel-options="{&quot;items&quot;: 1, &quot;controls&quot;: false, &quot;loop&quot;: false}">
+                  <div>
+                    <div class="row align-items-center">
+                      <div class="col-sm-6 order-sm-2">
+                        <div class="imgOuter w-100">
+                          <img class="d-block mx-auto h-100" src="images/home/banner-1.png" alt="MacGill">
+                        </div>
+                      </div>
+                      <div class="col-lg-5 col-sm-6 offset-lg-1 order-sm-1 pt-4 pb-sm-4 text-center text-sm-start mainSliderDetail px-5 px-sm-3">
+                        <div class="h2 fw-light pb-1 from-bottom">Welcome to</div>
+                        <div class="h1 display-4 from-bottom delay-1"> MacGill</div>
+                        <div class="h5 fw-light pb-3 m-0 from-bottom delay-2"> School Nurse Supply!</div>
+                        <div class="h5 fw-light pb-3 from-bottom delay-2">We at School Nurse Supply work hard to make your life as a School Nurse easier.</div>
+                        <div class="d-table scale-up delay-4 mx-auto mx-sm-0"><a class="btn btn-primary btn-shadow btn-sm" href="javascript:;">Shop Now<i class="ci-arrow-right ms-2 me-n1"></i></a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="row align-items-center">
+                      <div class="col-sm-6 order-sm-2">
+                        <div class="imgOuter w-100">
+                          <img class="d-block mx-auto h-100" src="images/home/banner-2.png" alt="MacGill">
+                        </div>
+                      </div>
+                      <div class="col-lg-5 col-sm-6 offset-lg-1 order-sm-1 pt-4 pb-sm-4 text-center text-sm-start mainSliderDetail px-5 px-sm-3">
+                        <div class="h2 fw-light pb-1 from-start">The</div>
+                        <div class="h1 display-4 from-start delay-1">Right Combo</div>
+                        <div class="h5 fw-light pb-3 from-start delay-2">For the job</div>
+                        <div class="d-table scale-up delay-4 mx-auto mx-sm-0"><a class="btn btn-primary btn-shadow btn-sm" href="javascript:;">Shop Now<i class="ci-arrow-right ms-2 me-n1"></i></a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Banner group-->
+            <div class="col-xl-3 order-xl-1 pt-4 mt-3 mt-xl-0 pt-xl-0  d-none d-xl-block">
+              <div class="table-responsive" data-simplebar>
+                <div class="d-flex d-xl-block">
+                  <a class="d-flex align-items-center bg-faded-info rounded-3 pt-2 ps-2 mb-4 me-4 me-xl-0" href="javascript:;" style="min-width: 16rem;">
+                    <img src="images/product/product-1.png" width="125" alt="Banner">
+                    <div class="py-4 px-2">
+                      <h5 class="mb-2"><span class="fw-light">Kids </span>KN95 <br><span class="fw-light">Masks, Black</span><br>50/Box</h5>
+                      <div class="text-info fs-sm">Shop now<i class="ci-arrow-right fs-xs ms-1"></i></div>
+                    </div>
+                  </a>
+                  <a class="d-flex align-items-center bg-faded-warning rounded-3 pt-2 ps-2 mb-4 me-4 me-xl-0" href="javascript:;" style="min-width: 16rem;">
+                    <img src="images/product/product-2.png" width="125" alt="Banner">
+                    <div class="py-4 px-2">
+                      <h5 class="mb-2"><span class="fw-light">Dial®</span><br>Liquid Soap<br><span class="fw-light">7.5 Oz. </span>Pump</h5>
+                      <div class="text-warning fs-sm">Shop now<i class="ci-arrow-right fs-xs ms-1"></i></div>
+                    </div>
+                  </a>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Products grid (Trending products)-->
+      <section class="container py-sm-5 py-4 products productImg">
+        <!-- Heading-->
+        <div class="d-flex flex-wrap justify-content-between align-items-center pt-1 border-bottom pb-sm-4 pb-3 mb-sm-4 mb-3">
+          <div class="h3 mb-0 me-2">Best Deals</div>
+          <div class=""><a class="btn btn-outline-accent btn-sm" href="shop-categori.html">More products<i class="ci-arrow-right ms-1 me-n1"></i></a></div>
+        </div>
+        <!-- Grid-->
+        <div class="row pt-2 mx-n2 g-4">
+          <!-- Product-->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card product-card border rounded-0 position-relative pb-0">
+              <div class="offerOut position-absolute">
+                <img class="w-100" src="images/product/offerIcon.png" alt="">
+              </div>
+              <div class="product-card-actions d-flex align-items-center">
+                <a class="btn-action nav-link-style me-2" href="javascript:;"><i class="ci-compare me-1"></i>Compare</a>
+                <button class="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to wishlist"><i class="ci-heart"></i></button>
+              </div>
+              <a class="card-img-top d-block overflow-hidden" href="product-detail.html">
+                <img class="h-100" src="images/product/product-1.png" alt="Product">
+              </a>
+              <div class="card-body py-2">
+                <a class="product-meta d-block fs-xs pb-1" href="javascript:;">Mask</a>
+                <h3 class="product-title fs-sm">
+                  <a href="javascript:;">Kids KN95 Masks, Black, 50/Box</a>
+                </h3>
+                <div class="d-flex justify-content-between">
+                  <div class="product-price">
+                    <span class="text-accent">$198.<small>00</small></span>
+                  </div>
+                  <div class="star-rating">
+                    <i class="star-rating-icon ci-star-filled active"></i>
+                    <i class="star-rating-icon ci-star-filled active"></i>
+                    <i class="star-rating-icon ci-star-filled active"></i>
+                    <i class="star-rating-icon ci-star-filled active"></i>
+                    <i class="star-rating-icon ci-star-filled active"></i>
+                  </div>
+                </div>
+                <button class="btn btn-primary btn-sm d-block w-100 my-2" type="button"><i class="ci-cart fs-sm me-1"></i>Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Product-->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card product-card border rounded-0 position-relative pb-0">
+              <div class="offerOut position-absolute">
+                <img class="w-100" src="images/product/offerIcon.png" alt="">
+              </div>
+              <div class="product-card-actions d-flex align-items-center"><a class="btn-action nav-link-style me-2" href="javascript:;"><i class="ci-compare me-1"></i>Compare</a>
+                <button class="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to wishlist"><i class="ci-heart"></i></button>
+              </div><a class="card-img-top d-block overflow-hidden" href="product-detail.html"><img class="h-100" src="images/product/product-2.png" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1" href="javascript:;">Soap</a>
+                <h3 class="product-title fs-sm"><a href="shop-single-v2.html">Dial® Liquid Soap, 7.5 Oz. Pump</a></h3>
+                <div class="d-flex justify-content-between">
+                  <div class="product-price"><span class="text-accent">$98.<small>50</small></span>
+                    <del class="fs-sm text-muted">$149.<small>99</small></del>
+                  </div>
+                  <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star"></i>
+                  </div>
+                </div>
+                <button class="btn btn-primary btn-sm d-block w-100 my-2" type="button"><i class="ci-cart fs-sm me-1"></i>Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Product-->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card product-card border rounded-0 position-relative pb-0">
+              <div class="offerOut position-absolute">
+                <img class="w-100" src="images/product/offerIcon.png" alt="">
+              </div>
+              <div class="product-card-actions d-flex align-items-center">
+                <a class="btn-action nav-link-style me-2" href="javascript:;"><i class="ci-compare me-1"></i>Compare</a>
+                <button class="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to wishlist"><i class="ci-heart"></i></button>
+              </div>
+              <a class="card-img-top d-block overflow-hidden" href="product-detail.html">
+                <img class="h-100" src="images/product/product-1.png" alt="Product">
+              </a>
+              <div class="card-body py-2">
+                <a class="product-meta d-block fs-xs pb-1" href="javascript:;">Mask</a>
+                <h3 class="product-title fs-sm">
+                  <a href="javascript:;">Kids KN95 Masks, Black, 50/Box</a>
+                </h3>
+                <div class="d-flex justify-content-between">
+                  <div class="product-price">
+                    <span class="text-accent">$198.<small>00</small></span>
+                  </div>
+                  <div class="star-rating">
+                    <i class="star-rating-icon ci-star-filled active"></i>
+                    <i class="star-rating-icon ci-star-filled active"></i>
+                    <i class="star-rating-icon ci-star-filled active"></i>
+                    <i class="star-rating-icon ci-star-filled active"></i>
+                    <i class="star-rating-icon ci-star-filled active"></i>
+                  </div>
+                </div>
+                <button class="btn btn-primary btn-sm d-block w-100 my-2" type="button"><i class="ci-cart fs-sm me-1"></i>Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Product-->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card product-card border rounded-0 position-relative pb-0">
+              <div class="offerOut position-absolute">
+                <img class="w-100" src="images/product/offerIcon.png" alt="">
+              </div>
+              <div class="product-card-actions d-flex align-items-center"><a class="btn-action nav-link-style me-2" href="javascript:;"><i class="ci-compare me-1"></i>Compare</a>
+                <button class="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to wishlist"><i class="ci-heart"></i></button>
+              </div><a class="card-img-top d-block overflow-hidden" href="product-detail.html"><img class="h-100" src="images/product/product-2.png" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1" href="javascript:;">Soap</a>
+                <h3 class="product-title fs-sm"><a href="shop-single-v2.html">Dial® Liquid Soap, 7.5 Oz. Pump</a></h3>
+                <div class="d-flex justify-content-between">
+                  <div class="product-price"><span class="text-accent">$98.<small>50</small></span>
+                    <del class="fs-sm text-muted">$149.<small>99</small></del>
+                  </div>
+                  <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star"></i>
+                  </div>
+                </div>
+                <button class="btn btn-primary btn-sm d-block w-100 my-2" type="button"><i class="ci-cart fs-sm me-1"></i>Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Product-->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card product-card border rounded-0 position-relative pb-0">
+              <div class="offerOut position-absolute">
+                <img class="w-100" src="images/product/offerIcon.png" alt="">
+              </div>
+              <div class="product-card-actions d-flex align-items-center">
+                <a class="btn-action nav-link-style me-2" href="javascript:;"><i class="ci-compare me-1"></i>Compare</a>
+                <button class="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to wishlist"><i class="ci-heart"></i></button>
+              </div>
+              <a class="card-img-top d-block overflow-hidden" href="product-detail.html">
+                <img class="h-100" src="images/product/product-1.png" alt="Product">
+              </a>
+              <div class="card-body py-2">
+                <a class="product-meta d-block fs-xs pb-1" href="javascript:;">Mask</a>
+                <h3 class="product-title fs-sm">
+                  <a href="javascript:;">Kids KN95 Masks, Black, 50/Box</a>
+                </h3>
+                <div class="d-flex justify-content-between">
+                  <div class="product-price">
+                    <span class="text-accent">$198.<small>00</small></span>
+                  </div>
+                  <div class="star-rating">
+                    <i class="star-rating-icon ci-star-filled active"></i>
+                    <i class="star-rating-icon ci-star-filled active"></i>
+                    <i class="star-rating-icon ci-star-filled active"></i>
+                    <i class="star-rating-icon ci-star-filled active"></i>
+                    <i class="star-rating-icon ci-star-filled active"></i>
+                  </div>
+                </div>
+                <button class="btn btn-primary btn-sm d-block w-100 my-2" type="button"><i class="ci-cart fs-sm me-1"></i>Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Product-->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card product-card border rounded-0 position-relative pb-0">
+              <div class="offerOut position-absolute">
+                <img class="w-100" src="images/product/offerIcon.png" alt="">
+              </div>
+              <div class="product-card-actions d-flex align-items-center"><a class="btn-action nav-link-style me-2" href="javascript:;"><i class="ci-compare me-1"></i>Compare</a>
+                <button class="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to wishlist"><i class="ci-heart"></i></button>
+              </div><a class="card-img-top d-block overflow-hidden" href="product-detail.html"><img class="h-100" src="images/product/product-2.png" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1" href="javascript:;">Soap</a>
+                <h3 class="product-title fs-sm"><a href="shop-single-v2.html">Dial® Liquid Soap, 7.5 Oz. Pump</a></h3>
+                <div class="d-flex justify-content-between">
+                  <div class="product-price"><span class="text-accent">$98.<small>50</small></span>
+                    <del class="fs-sm text-muted">$149.<small>99</small></del>
+                  </div>
+                  <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star"></i>
+                  </div>
+                </div>
+                <button class="btn btn-primary btn-sm d-block w-100 my-2" type="button"><i class="ci-cart fs-sm me-1"></i>Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Product-->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card product-card border rounded-0 position-relative pb-0">
+              <div class="offerOut position-absolute">
+                <img class="w-100" src="images/product/offerIcon.png" alt="">
+              </div>
+              <div class="product-card-actions d-flex align-items-center">
+                <a class="btn-action nav-link-style me-2" href="javascript:;"><i class="ci-compare me-1"></i>Compare</a>
+                <button class="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to wishlist"><i class="ci-heart"></i></button>
+              </div>
+              <a class="card-img-top d-block overflow-hidden" href="product-detail.html">
+                <img class="h-100" src="images/product/product-1.png" alt="Product">
+              </a>
+              <div class="card-body py-2">
+                <a class="product-meta d-block fs-xs pb-1" href="javascript:;">Mask</a>
+                <h3 class="product-title fs-sm">
+                  <a href="javascript:;">Kids KN95 Masks, Black, 50/Box</a>
+                </h3>
+                <div class="d-flex justify-content-between">
+                  <div class="product-price">
+                    <span class="text-accent">$198.<small>00</small></span>
+                  </div>
+                  <div class="star-rating">
+                    <i class="star-rating-icon ci-star-filled active"></i>
+                    <i class="star-rating-icon ci-star-filled active"></i>
+                    <i class="star-rating-icon ci-star-filled active"></i>
+                    <i class="star-rating-icon ci-star-filled active"></i>
+                    <i class="star-rating-icon ci-star-filled active"></i>
+                  </div>
+                </div>
+                <button class="btn btn-primary btn-sm d-block w-100 my-2" type="button"><i class="ci-cart fs-sm me-1"></i>Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Product-->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card product-card border rounded-0 position-relative pb-0">
+              <div class="offerOut position-absolute">
+                <img class="w-100" src="images/product/offerIcon.png" alt="">
+              </div>
+              <div class="product-card-actions d-flex align-items-center"><a class="btn-action nav-link-style me-2" href="javascript:;"><i class="ci-compare me-1"></i>Compare</a>
+                <button class="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to wishlist"><i class="ci-heart"></i></button>
+              </div><a class="card-img-top d-block overflow-hidden" href="product-detail.html"><img class="h-100" src="images/product/product-2.png" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1" href="javascript:;">Soap</a>
+                <h3 class="product-title fs-sm"><a href="shop-single-v2.html">Dial® Liquid Soap, 7.5 Oz. Pump</a></h3>
+                <div class="d-flex justify-content-between">
+                  <div class="product-price"><span class="text-accent">$98.<small>50</small></span>
+                    <del class="fs-sm text-muted">$149.<small>99</small></del>
+                  </div>
+                  <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star"></i>
+                  </div>
+                </div>
+                <button class="btn btn-primary btn-sm d-block w-100 my-2" type="button"><i class="ci-cart fs-sm me-1"></i>Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Promo banner-->
+      <section class="container mbgrid-gutter limetedOffer">
+        <div class="row">
+          <div class="col-md-8 bg-faded-info rounded-3 py-4 align-items-sm-center d-sm-flex d-md-block d-lg-flex ">
+            <div class="row align-items-center ">
+              <div class="col-lg-8 col-md-12 col-sm-6">
+                <div class="px-4 pe-sm-0 ps-sm-5"><span class="badge bg-danger">Limited Offer</span>
+                  <div class="h4 mt-lg-4 mt-2 mb-1 text-body fw-light">All new</div>
+                  <div class="h3 mb-1">Mobilize™ </div>
+                  <div class="h5 text-body fw-light mb-0">Comprehensive Trauma Kit</div>
+                  <div class="countdown py-2 h5" data-countdown="07/08/2023 07:00:00 PM">
+                    <div class="countdown-days"><span class="countdown-value"></span><span class="countdown-label text-muted">d</span></div>
+                    <div class="countdown-hours"><span class="countdown-value"></span><span class="countdown-label text-muted">h</span></div>
+                    <div class="countdown-minutes"><span class="countdown-value"></span><span class="countdown-label text-muted">m</span></div>
+                    <div class="countdown-seconds"><span class="countdown-value"></span><span class="countdown-label text-muted">s</span></div>
+                  </div><a class="btn btn-accent btn-sm" href="javascript:;">View offers<i class="ci-arrow-right fs-ms ms-1"></i></a>
+                </div>
+              </div>
+              <div class="col-lg col-sm-6 d-md-none d-lg-block px-4 ps-sm-0 pe-sm-5 text-center">
+                <div class="imgOuter">
+                  <img class="h-100" src="images/product/limetedOfferImg.png" alt="Limeted Offer">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-none d-md-block blog">
+            <a class="d-block position-relative h-100" href="blog-detail.html">
+              <img class="d-block rounded-3 w-100 h-100" src="images/other/blogBg.png" alt="Promo banner">
+              <div class="txt text-center p-lg-5 p-4 position-absolute m-auto d-flex align-items-center justify-content-center">
+                <div class="outer fs-5">
+                  <span>Did you know you can <br class="d-none d-lg-block"> shop by</span>
+                  <span class="d-block"><b>CATEGORIES</b></span>
+                  <span class="mt-3">
+                    <button class="btn btn-primary btn-sm d-block my-2 mx-auto" type="button">SHOP CATEGORIES</button>
+                  </span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- Products grid (Trending products)-->
+      <section class="container products productImg pt-sm-5 pt-4">
+        <!-- Heading-->
+        <div class="d-flex flex-wrap justify-content-between align-items-center border-bottom pb-sm-4 pb-3 mb-sm-4 mb-3">
+          <div class="h3 mb-0  me-2">All Products</div>
+          <div class=""><a class="btn btn-outline-accent btn-sm" href="shop-categori.html">More products<i class="ci-arrow-right ms-1 me-n1"></i></a></div>
+        </div>
+        <!-- Grid-->
+        <div class="row pt-2 mx-n2 g-4">
+          <!-- Product-->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card product-card border rounded-0 pb-0">
+              <div class="product-card-actions d-flex align-items-center">
+                <a class="btn-action nav-link-style me-2" href="javascript:;"><i class="ci-compare me-1"></i>Compare</a>
+                <button class="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to wishlist"><i class="ci-heart"></i></button>
+              </div>
+              <a class="card-img-top d-block overflow-hidden" href="product-detail.html">
+                <img class="h-100" src="images/product/product-1.png" alt="Product">
+              </a>
+              <div class="card-body py-2">
+                <a class="product-meta d-block fs-xs pb-1" href="javascript:;">Mask</a>
+                <h3 class="product-title fs-sm">
+                  <a href="javascript:;">Kids KN95 Masks, Black, 50/Box</a>
+                </h3>
+                <div class="d-flex justify-content-between">
+                  <div class="product-price">
+                    <span class="text-accent">$198.<small>00</small></span>
+                  </div>
+                  <div class="star-rating">
+                    <i class="star-rating-icon ci-star-filled active"></i>
+                    <i class="star-rating-icon ci-star-filled active"></i>
+                    <i class="star-rating-icon ci-star-filled active"></i>
+                    <i class="star-rating-icon ci-star-filled active"></i>
+                    <i class="star-rating-icon ci-star-filled active"></i>
+                  </div>
+                </div>
+                <button class="btn btn-primary btn-sm d-block w-100 my-2" type="button"><i class="ci-cart fs-sm me-1"></i>Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Product-->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card product-card border rounded-0 pb-0">
+              <div class="product-card-actions d-flex align-items-center"><a class="btn-action nav-link-style me-2" href="javascript:;"><i class="ci-compare me-1"></i>Compare</a>
+                <button class="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to wishlist"><i class="ci-heart"></i></button>
+              </div><a class="card-img-top d-block overflow-hidden" href="product-detail.html"><img class="h-100" src="images/product/product-2.png" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1" href="javascript:;">Soap</a>
+                <h3 class="product-title fs-sm"><a href="shop-single-v2.html">Dial® Liquid Soap, 7.5 Oz. Pump</a></h3>
+                <div class="d-flex justify-content-between">
+                  <div class="product-price"><span class="text-accent">$98.<small>50</small></span>
+                    <del class="fs-sm text-muted">$149.<small>99</small></del>
+                  </div>
+                  <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star"></i>
+                  </div>
+                </div>
+                <button class="btn btn-primary btn-sm d-block w-100 my-2" type="button"><i class="ci-cart fs-sm me-1"></i>Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Product-->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card product-card border rounded-0 pb-0">
+              <div class="product-card-actions d-flex align-items-center">
+                <a class="btn-action nav-link-style me-2" href="javascript:;"><i class="ci-compare me-1"></i>Compare</a>
+                <button class="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to wishlist"><i class="ci-heart"></i></button>
+              </div>
+              <a class="card-img-top d-block overflow-hidden" href="product-detail.html">
+                <img class="h-100" src="images/product/product-1.png" alt="Product">
+              </a>
+              <div class="card-body py-2">
+                <a class="product-meta d-block fs-xs pb-1" href="javascript:;">Mask</a>
+                <h3 class="product-title fs-sm">
+                  <a href="javascript:;">Kids KN95 Masks, Black, 50/Box</a>
+                </h3>
+                <div class="d-flex justify-content-between">
+                  <div class="product-price">
+                    <span class="text-accent">$198.<small>00</small></span>
+                  </div>
+                  <div class="star-rating">
+                    <i class="star-rating-icon ci-star-filled active"></i>
+                    <i class="star-rating-icon ci-star-filled active"></i>
+                    <i class="star-rating-icon ci-star-filled active"></i>
+                    <i class="star-rating-icon ci-star-filled active"></i>
+                    <i class="star-rating-icon ci-star-filled active"></i>
+                  </div>
+                </div>
+                <button class="btn btn-primary btn-sm d-block w-100 my-2" type="button"><i class="ci-cart fs-sm me-1"></i>Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Product-->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card product-card border rounded-0 pb-0">
+              <div class="product-card-actions d-flex align-items-center"><a class="btn-action nav-link-style me-2" href="javascript:;"><i class="ci-compare me-1"></i>Compare</a>
+                <button class="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to wishlist"><i class="ci-heart"></i></button>
+              </div><a class="card-img-top d-block overflow-hidden" href="product-detail.html"><img class="h-100" src="images/product/product-2.png" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1" href="javascript:;">Soap</a>
+                <h3 class="product-title fs-sm"><a href="shop-single-v2.html">Dial® Liquid Soap, 7.5 Oz. Pump</a></h3>
+                <div class="d-flex justify-content-between">
+                  <div class="product-price"><span class="text-accent">$98.<small>50</small></span>
+                    <del class="fs-sm text-muted">$149.<small>99</small></del>
+                  </div>
+                  <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star"></i>
+                  </div>
+                </div>
+                <button class="btn btn-primary btn-sm d-block w-100 my-2" type="button"><i class="ci-cart fs-sm me-1"></i>Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Product-->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card product-card border rounded-0 pb-0">
+              <div class="product-card-actions d-flex align-items-center">
+                <a class="btn-action nav-link-style me-2" href="javascript:;"><i class="ci-compare me-1"></i>Compare</a>
+                <button class="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to wishlist"><i class="ci-heart"></i></button>
+              </div>
+              <a class="card-img-top d-block overflow-hidden" href="product-detail.html">
+                <img class="h-100" src="images/product/product-1.png" alt="Product">
+              </a>
+              <div class="card-body py-2">
+                <a class="product-meta d-block fs-xs pb-1" href="javascript:;">Mask</a>
+                <h3 class="product-title fs-sm">
+                  <a href="javascript:;">Kids KN95 Masks, Black, 50/Box</a>
+                </h3>
+                <div class="d-flex justify-content-between">
+                  <div class="product-price">
+                    <span class="text-accent">$198.<small>00</small></span>
+                  </div>
+                  <div class="star-rating">
+                    <i class="star-rating-icon ci-star-filled active"></i>
+                    <i class="star-rating-icon ci-star-filled active"></i>
+                    <i class="star-rating-icon ci-star-filled active"></i>
+                    <i class="star-rating-icon ci-star-filled active"></i>
+                    <i class="star-rating-icon ci-star-filled active"></i>
+                  </div>
+                </div>
+                <button class="btn btn-primary btn-sm d-block w-100 my-2" type="button"><i class="ci-cart fs-sm me-1"></i>Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Product-->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card product-card border rounded-0 pb-0">
+              <div class="product-card-actions d-flex align-items-center"><a class="btn-action nav-link-style me-2" href="javascript:;"><i class="ci-compare me-1"></i>Compare</a>
+                <button class="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to wishlist"><i class="ci-heart"></i></button>
+              </div><a class="card-img-top d-block overflow-hidden" href="product-detail.html"><img class="h-100" src="images/product/product-2.png" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1" href="javascript:;">Soap</a>
+                <h3 class="product-title fs-sm"><a href="shop-single-v2.html">Dial® Liquid Soap, 7.5 Oz. Pump</a></h3>
+                <div class="d-flex justify-content-between">
+                  <div class="product-price"><span class="text-accent">$98.<small>50</small></span>
+                    <del class="fs-sm text-muted">$149.<small>99</small></del>
+                  </div>
+                  <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star"></i>
+                  </div>
+                </div>
+                <button class="btn btn-primary btn-sm d-block w-100 my-2" type="button"><i class="ci-cart fs-sm me-1"></i>Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Product-->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card product-card border rounded-0 pb-0">
+              <div class="product-card-actions d-flex align-items-center">
+                <a class="btn-action nav-link-style me-2" href="javascript:;"><i class="ci-compare me-1"></i>Compare</a>
+                <button class="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to wishlist"><i class="ci-heart"></i></button>
+              </div>
+              <a class="card-img-top d-block overflow-hidden" href="product-detail.html">
+                <img class="h-100" src="images/product/product-1.png" alt="Product">
+              </a>
+              <div class="card-body py-2">
+                <a class="product-meta d-block fs-xs pb-1" href="javascript:;">Mask</a>
+                <h3 class="product-title fs-sm">
+                  <a href="javascript:;">Kids KN95 Masks, Black, 50/Box</a>
+                </h3>
+                <div class="d-flex justify-content-between">
+                  <div class="product-price">
+                    <span class="text-accent">$198.<small>00</small></span>
+                  </div>
+                  <div class="star-rating">
+                    <i class="star-rating-icon ci-star-filled active"></i>
+                    <i class="star-rating-icon ci-star-filled active"></i>
+                    <i class="star-rating-icon ci-star-filled active"></i>
+                    <i class="star-rating-icon ci-star-filled active"></i>
+                    <i class="star-rating-icon ci-star-filled active"></i>
+                  </div>
+                </div>
+                <button class="btn btn-primary btn-sm d-block w-100 my-2" type="button"><i class="ci-cart fs-sm me-1"></i>Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Product-->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card product-card border rounded-0 pb-0">
+              <div class="product-card-actions d-flex align-items-center"><a class="btn-action nav-link-style me-2" href="javascript:;"><i class="ci-compare me-1"></i>Compare</a>
+                <button class="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to wishlist"><i class="ci-heart"></i></button>
+              </div><a class="card-img-top d-block overflow-hidden" href="product-detail.html"><img class="h-100" src="images/product/product-2.png" alt="Product"></a>
+              <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1" href="javascript:;">Soap</a>
+                <h3 class="product-title fs-sm"><a href="shop-single-v2.html">Dial® Liquid Soap, 7.5 Oz. Pump</a></h3>
+                <div class="d-flex justify-content-between">
+                  <div class="product-price"><span class="text-accent">$98.<small>50</small></span>
+                    <del class="fs-sm text-muted">$149.<small>99</small></del>
+                  </div>
+                  <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star"></i>
+                  </div>
+                </div>
+                <button class="btn btn-primary btn-sm d-block w-100 my-2" type="button"><i class="ci-cart fs-sm me-1"></i>Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container pt-sm-5 pt-4 printableFormouter">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="imgOuter h-100">
+              <img class="w-100 h-100" src="images/other/img-4.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="printableForm border border-2 border-primary border-opacity-100 rounded-4 overflow-hidden">
+              <div class="title h4 text-white bg-primary p-2 px-3 m-0"><i class="ci-document text-white"></i> Printable Forms</div>
+              <ul class="p-0 list-unstyled p-3 m-0 d-flex gap-2 flex-column">
+                <li class="m-0"><a class="text-dark links" href="https://www.macgill.com/media/pdfs/2021-macgill-order-form.pdf" target="_blank"><i class="ci-arrow-right me-1"></i> MacGill Order Form</a></li>
+                <li class="m-0"><a class="text-dark links" href="https://www.macgill.com/media/pdfs/2021-macgill-order-form.pdf" target="_blank"><i class="ci-arrow-right me-1"></i> MacGill Prescription Drug Authorization Form</a></li>
+                <li class="m-0"><a class="text-dark links" href="https://www.macgill.com/media/pdfs/2021-macgill-order-form.pdf" target="_blank"><i class="ci-arrow-right me-1"></i> MacGill Calibration & Repair Form</a></li>
+                <li class="m-0"><a class="text-dark links" href="https://www.macgill.com/media/pdfs/2021-macgill-order-form.pdf" target="_blank"><i class="ci-arrow-right me-1"></i> Cubicle Curtain Questionnaire</a></li>
+                <li class="m-0"><a class="text-dark links" href="https://www.macgill.com/media/pdfs/2021-macgill-order-form.pdf" target="_blank"><i class="ci-arrow-right me-1"></i> Welch Allyn Partners In Care</a></li>
+                <li class="m-0"><a class="text-dark links" href="https://www.macgill.com/media/pdfs/2021-macgill-order-form.pdf" target="_blank"><i class="ci-arrow-right me-1"></i> MacGill School Nurse Starter Kit</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Product widgets-->
+      <section class="container pt-sm-5 pt-4">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-4 d-md-none d-lg-block blog">
+            <div class="row g-4">
+              <div class="col-sm-6 col-md-12">
+                <a class="d-block position-relative" href="blog-detail.html">
+                  <img class="d-block rounded-3" src="images/other/blogBg.png" alt="Promo banner">
+                  <div class="txt text-center p-lg-5 p-4 position-absolute m-auto d-flex align-items-center justify-content-center">
+                    <div class="outer fs-5">
+                      <span>A Long Way from Henny Street <br class="d-none d-lg-block"> Share Your School Nurse</span>
+                      <span class="d-block"><b>Store</b></span>
+                      <span class="mt-3">
+                        <button class="btn btn-primary btn-sm d-block my-2 mx-auto" type="button">LEARN MORE</button>
+                      </span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-sm-6 d-md-none">
+                <a class="d-block position-relative h-100" href="blog-detail.html">
+                  <img class="d-block rounded-3 w-100 h-100" src="images/other/blogBg.png" alt="Promo banner">
+                  <div class="txt text-center p-lg-5 p-4 position-absolute m-auto d-flex align-items-center justify-content-center">
+                    <div class="outer fs-5">
+                      <span>Did you know you can <br class="d-none d-lg-block"> shop by</span>
+                      <span class="d-block"><b>CATEGORIES</b></span>
+                      <span class="mt-3">
+                        <button class="btn btn-primary btn-sm d-block my-2 mx-auto" type="button">SHOP CATEGORIES</button>
+                      </span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="widget">
+              <div class="h3 widget-title">Bestsellers</div>
+              <div class="d-flex align-items-center pb-2 border-bottom"><a class="d-block" href="product-detail.html"><img src="images/product/product-1.png" width="64" alt="Product"></a>
+                <div class="ps-2">
+                  <h6 class="widget-product-title"><a href="product-detail.html">Kids KN95 Masks, Black, 50/Box</a></h6>
+                  <div class="widget-product-meta"><span class="text-accent me-2">$150.<small>00</small></span></div>
+                </div>
+              </div>
+              <div class="d-flex align-items-center py-2 border-bottom"><a class="d-block" href="product-detail.html"><img src="images/product/product-2.png" width="64" alt="Product"></a>
+                <div class="ps-2">
+                  <h6 class="widget-product-title"><a href="product-detail.html">Dial® Liquid Soap, 7.5 Oz. Pump</a></h6>
+                  <div class="widget-product-meta"><span class="text-accent me-2">$79.<small>50</small></span></div>
+                </div>
+              </div>
+              <div class="d-flex align-items-center pb-2 border-bottom"><a class="d-block" href="product-detail.html"><img src="images/product/product-1.png" width="64" alt="Product"></a>
+                <div class="ps-2">
+                  <h6 class="widget-product-title"><a href="product-detail.html">Kids KN95 Masks, Black, 50/Box</a></h6>
+                  <div class="widget-product-meta"><span class="text-accent me-2">$150.<small>00</small></span></div>
+                </div>
+              </div>
+              <div class="d-flex align-items-center py-2 border-bottom"><a class="d-block" href="product-detail.html"><img src="images/product/product-2.png" width="64" alt="Product"></a>
+                <div class="ps-2">
+                  <h6 class="widget-product-title"><a href="product-detail.html">Dial® Liquid Soap, 7.5 Oz. Pump</a></h6>
+                  <div class="widget-product-meta"><span class="text-accent me-2">$79.<small>50</small></span></div>
+                </div>
+              </div>
+              <p class="mb-0">...</p><a class="fs-sm" href="shop-grid-ls.html">View more<i class="ci-arrow-right fs-xs ms-1"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="widget">
+              <div class="h3 widget-title">New arrivals</div>
+              <div class="d-flex align-items-center pb-2 border-bottom"><a class="d-block" href="product-detail.html"><img src="images/product/product-1.png" width="64" alt="Product"></a>
+                <div class="ps-2">
+                  <h6 class="widget-product-title"><a href="product-detail.html">Kids KN95 Masks, Black, 50/Box</a></h6>
+                  <div class="widget-product-meta"><span class="text-accent me-2">$150.<small>00</small></span></div>
+                </div>
+              </div>
+              <div class="d-flex align-items-center py-2 border-bottom"><a class="d-block" href="product-detail.html"><img src="images/product/product-2.png" width="64" alt="Product"></a>
+                <div class="ps-2">
+                  <h6 class="widget-product-title"><a href="product-detail.html">Dial® Liquid Soap, 7.5 Oz. Pump</a></h6>
+                  <div class="widget-product-meta"><span class="text-accent me-2">$79.<small>50</small></span></div>
+                </div>
+              </div>
+              <div class="d-flex align-items-center pb-2 border-bottom"><a class="d-block" href="product-detail.html"><img src="images/product/product-1.png" width="64" alt="Product"></a>
+                <div class="ps-2">
+                  <h6 class="widget-product-title"><a href="product-detail.html">Kids KN95 Masks, Black, 50/Box</a></h6>
+                  <div class="widget-product-meta"><span class="text-accent me-2">$150.<small>00</small></span></div>
+                </div>
+              </div>
+              <div class="d-flex align-items-center py-2 border-bottom"><a class="d-block" href="product-detail.html"><img src="images/product/product-2.png" width="64" alt="Product"></a>
+                <div class="ps-2">
+                  <h6 class="widget-product-title"><a href="product-detail.html">Dial® Liquid Soap, 7.5 Oz. Pump</a></h6>
+                  <div class="widget-product-meta"><span class="text-accent me-2">$79.<small>50</small></span></div>
+                </div>
+              </div>
+              <p class="mb-0">...</p><a class="fs-sm" href="shop-grid-ls.html">View more<i class="ci-arrow-right fs-xs ms-1"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- YouTube feed-->
+      <section class="container pt-sm-5 pt-4 ourBlog">
+        <div class="border rounded-3 p-3">
+          <div class="row">
+            <div class="col-lg-4 mb-3 mb-md-0">
+              <div class="bg-secondary p-sm-5 p-4 text-center h-100 align-items-center d-flex justify-content-center position-relative">
+                <div class="">
+                  <div class="d-flex justify-content-center align-items-center mb-3">
+                    <i class="ci-edit h3 mt-2 text-primary"></i>
+                  </div>
+                  <a class="btn btn-primary border-0 btn-sm mb-3 stretched-link" href="blog-main.html"><i class="ci-edit-alt me-2"></i>Read the blog</a>
+                  <p class="fs-sm mb-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, ab!</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="d-flex flex-wrap justify-content-between align-items-center pt-3 pb-2">
+                <div class="h4 mb-3">Our Blog</div><a class="btn btn-outline-accent btn-sm mb-3" href="javascript:;">More Blogs<i class="ci-arrow-right fs-xs ms-1 me-n1"></i></a>
+              </div>
+              <div class="row g-4">
+                <div class="col-md-4 col-sm-6">
+                  <div class="blogOuter position-relative border rounded-4 overflow-hidden h-100">
+                    <div class="position-relative ">
+                      <img class="w-100" src="img/home/video/cover01.jpg" alt="Video cover">
+                    </div>
+                    <div class="details p-3">
+                      <div class="h6 fs-sm m-0 text-muted fw-normal">March 1 2023</div>
+                      <a class="stretched-link d-block text-decoration-0 link" href="blog-detail.html">
+                        <div class="h5 fs-sm pt-1 title">Tuning in: Music + Health</div>
+                      </a>
+                      <div class="readMoreLink align-items-center d-flex justify-content-end">Read More <i class="ci-arrow-right ms-1 fw-bold"></i></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <div class="blogOuter position-relative border rounded-4 overflow-hidden h-100">
+                    <div class="position-relative ">
+                      <img class="w-100" src="img/home/video/cover01.jpg" alt="Video cover">
+                    </div>
+                    <div class="details p-3">
+                      <div class="h6 fs-sm m-0 text-muted fw-normal">February 1 2023</div>
+                      <a class="stretched-link d-block text-decoration-0 link" href="blog-detail.html">
+                        <div class="h5 fs-sm pt-1 title">Sudden Cardiac Arrest: What Schools Should Know</div>
+                      </a>
+                      <div class="readMoreLink align-items-center d-flex justify-content-end">Read More <i class="ci-arrow-right ms-1 fw-bold"></i></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <div class="blogOuter position-relative border rounded-4 overflow-hidden h-100">
+                    <div class="position-relative ">
+                      <img class="w-100" src="img/home/video/cover01.jpg" alt="Video cover">
+                    </div>
+                    <div class="details p-3">
+                      <div class="h6 fs-sm m-0 text-muted fw-normal">February 22 2023</div>
+                      <a class="stretched-link d-block text-decoration-0 link" href="blog-detail.html">
+                        <div class="h5 fs-sm pt-1 title">But First, Breakfast</div>
+                      </a>
+                      <div class="readMoreLink align-items-center d-flex justify-content-end">Read More <i class="ci-arrow-right ms-1 fw-bold"></i></div>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="col-lg-4 col-6 mb-3"><a class="d-block text-decoration-0 px-2" href="https://www.youtube.com/embed/B6LaYgGogf0" data-bs-toggle="video">
+                    <div class="position-relative mb-2"><span class="badge bg-dark position-absolute bottom-0 end-0 mb-2 me-2">7:27</span><img class="w-100" src="img/home/video/cover02.jpg" alt="Video cover"></div>
+                    <h6 class="fs-sm pt-1">5 Super Useful Gadgets on Cartzilla You Must Have in 2020</h6></a></div>
+                <div class="col-lg-4 col-6 mb-3"><a class="d-block text-decoration-0 px-2" href="https://www.youtube.com/embed/kB-ROfRS9V4" data-bs-toggle="video">
+                    <div class="position-relative mb-2"><span class="badge bg-dark position-absolute bottom-0 end-0 mb-2 me-2">6:20</span><img class="w-100" src="img/home/video/cover03.jpg" alt="Video cover"></div>
+                    <h6 class="fs-sm pt-1">Top 5 New Amazing Gadgets on Cartzilla You Must See</h6></a></div>
+                <div class="col-lg-4 col-6 mb-3 d-lg-none"><a class="d-block text-decoration-0 px-2" href="https://www.youtube.com/embed/sJK67XXE_Rg" data-bs-toggle="video">
+                    <div class="position-relative mb-2"><span class="badge bg-dark position-absolute bottom-0 end-0 mb-2 me-2">6:11</span><img class="w-100" src="img/home/video/cover04.jpg" alt="Video cover"></div>
+                    <h6 class="fs-sm fw-bold pt-1">5 Amazing Construction Inventions and Working Tools Available...</h6></a></div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container py-sm-5 py-4 customGallery">
+        <div class="row g-4">
+          <div class="col-sm-6">
+            <a class="imgOuter bigImg w-100 h-100" href="javascript:;">
+              <img class="w-100" src="images/other/img-2.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3 col-6">
+            <a class="imgOuter bigImg w-100 h-100" href="javascript:;">
+              <img class="w-100 h-100" src="images/other/img-1.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-sm-3 col-6">
+            <a class="imgOuter bigImg w-100 h-100" href="javascript:;">
+              <img class="w-100 h-100" src="images/other/img-3.jpg" alt="">
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer-->
+    <footer class="footer bg-dark">
+      <div class="py-sm-5 py-4 bg-darker">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-lg-3 col-sm-6">
+              <div class="d-lg-flex text-center text-lg-start">
+                <i class="ci-delivery text-primary" style="font-size: 2.25rem;"></i>
+                <div class="ps-lg-3">
+                  <h6 class="fs-base text-light mb-1">Fast and free delivery</h6>
+                  <p class="mb-0 fs-ms text-light opacity-50">Free delivery for all orders over $65</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="d-lg-flex text-center text-lg-start"><i class="ci-support text-primary" style="font-size: 2.25rem;"></i>
+                <div class="ps-lg-3">
+                  <h6 class="fs-base text-light mb-1">24/7 customer support</h6>
+                  <p class="mb-0 fs-ms text-light opacity-50">Friendly 24/7 customer support</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="d-lg-flex text-center text-lg-start"><i class="ci-currency-exchange text-primary" style="font-size: 2.25rem;"></i>
+                <div class="ps-lg-3">
+                  <h6 class="fs-base text-light mb-1">Money back guarantee</h6>
+                  <p class="mb-0 fs-ms text-light opacity-50">We return money within 30 days</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="d-lg-flex text-center text-lg-start"><i class="ci-card text-primary" style="font-size: 2.25rem;"></i>
+                <div class="ps-lg-3">
+                  <h6 class="fs-base text-light mb-1">Secure online payment</h6>
+                  <p class="mb-0 fs-ms text-light opacity-50">We possess SSL / Secure сertificate</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container py-sm-5 py-4">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="widget widget-links widget-light pb-2">
+              <div class="row g-4">
+                <div class="col-lg-12 col-sm-6">
+                  <a class="d-inline-block align-middle mt-n1 me-3" href="index.html">
+                    <img class="d-block" src="images/logo/logo-macgill-white.png" width="117" alt="MacGill">
+                  </a>
+                  <div class="footerAbout text-light text-opacity-75 fs-14 mt-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, molestiae.</div>
+                  <div class="mt-4 d-flex">
+                    <a class="btn-social bs-light bs-twitter mb-2" href="javascript:;">
+                      <i class="ci-twitter"></i>
+                    </a>
+                    <a class="btn-social bs-light bs-facebook ms-2 mb-2" href="javascript:;">
+                      <i class="ci-facebook"></i>
+                    </a>
+                    <a class="btn-social bs-light bs-instagram ms-2 mb-2" href="javascript:;">
+                      <i class="ci-instagram"></i>
+                    </a>
+                    <a class="btn-social bs-light bs-pinterest ms-2 mb-2" href="javascript:;">
+                      <i class="ci-pinterest"></i>
+                    </a>
+                    <a class="btn-social bs-light bs-youtube ms-2 mb-2" href="javascript:;">
+                      <i class="ci-youtube"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-12 col-sm-6">
+                  <div class="widget pb-2">
+                    <div class="h3 widget-title text-light pb-1 mb-2">All schools have instant credit</div>
+                    <img class="d-inline-block" src="img/cards-alt.png" width="240" alt="Payment methods">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="row g-4">
+              <div class="col-sm-6">
+                <div class="widget widget-links widget-light pb-2">
+                  <div class="h3 widget-title text-light">Menu</div>
+                  <ul class="widget-list">
+                    <li class="widget-list-item"><a class="widget-list-link" href="index.html">Home</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="javascript:;">About Us</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="javascript:;">Advanced Search</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="javascript:;">Recall Notices</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="javascript:;">Health & Nurse Links</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="widget widget-links widget-light pb-2">
+                  <h3 class="widget-title text-light">Policys</h3>
+                  <ul class="widget-list">
+                    <li class="widget-list-item"><a class="widget-list-link" href="javascript:;">Orders & Returns</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="javascript:;">Shipping & Tracking</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="javascript:;">Privacy Policy</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="javascript:;">Legal</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="javascript:;">Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="row g-4">
+              <div class="col-lg-12 col-sm-6">
+                <div class="widget widget-links widget-light pb-2">
+                  <div class="h3 widget-title text-light pb-1">Contact Us</div>
+                  <ul class="widget-list">
+                    <li class="widget-list-item d-flex gap-2"><i class="ci-location h6 mt-1 text-primary"></i><a class="widget-list-link"> 1000 N. Lombard Rd. Lombard, <br> Illinois 60148</a></li>
+                    <li class="widget-list-item d-flex align-items-md-center align-items-sm-baseline align-items-center gap-2"><i class="ci-phone h6 m-0 text-primary"></i><span class="d-inline-block"><a class="widget-list-link d-inline-block me-2" href="tel:1-800-323-2841">1-800-323-2841,</a><a class="widget-list-link d-inline-block" href="tel:1-800-727-3433">1-800-727-3433</a></span></li>
+                    <li class="widget-list-item"><a class="widget-list-link d-flex align-items-center gap-2" href="mailTo:macgill@macgill.com"><i class="ci-mail h6 m-0 text-primary"></i> macgill@macgill.com</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-12 col-sm-6">
+                <div class="widget pb-2">
+                  <div class="h3 widget-title text-light pb-1">NEWSLETTER</div>
+                  <form class="subscription-form validate" action="" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+                    <div class="input-group flex-nowrap"><i class="ci-mail position-absolute top-50 translate-middle-y text-muted fs-base ms-md-3 ms-2"></i>
+                      <input class="form-control rounded-start" type="email" name="EMAIL" placeholder="Your email" required>
+                      <button class="btn btn-primary btn-sm" type="submit" name="subscribe">Subscribe*</button>
+                    </div>
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                      <input class="subscription-form-antispam" type="text" name="b_c7103e2c981361a6639545bd5_29ca296126" tabindex="-1">
+                    </div>
+                    <div class="form-text text-light opacity-50">*Subscribe to our newsletter to receive early discount offers, updates and new products info.</div>
+                    <div class="subscription-status"></div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="widget pb-2 mb-4">
+              <div class="h3 widget-title text-light pb-1 mb-2">All schools have instant credit</div>
+              <img class="d-inline-block" src="img/cards-alt.png" width="240" alt="Payment methods">
+            </div> -->
+            <!-- <div class="widget pb-2 mb-4">
+              <h3 class="widget-title text-light pb-1">Download our app</h3>
+              <div class="d-flex flex-wrap">
+                <div class="me-2 mb-2"><a class="btn-market btn-apple" href="javascript:;" role="button"><span class="btn-market-subtitle">Download on the</span><span class="btn-market-title">App Store</span></a></div>
+                <div class="mb-2"><a class="btn-market btn-google" href="javascript:;" role="button"><span class="btn-market-subtitle">Download on the</span><span class="btn-market-title">Google Play</span></a></div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <div class="bg-darker">
+        <div class="container">
+          <div class="py-4 fs-xs text-light opacity-50 text-center">© 2023 MacGill School Nurse Supplies. All Rights Reserved. Made by <a class="text-light" href="javascript:;" target="_blank" rel="noopener">IMG Global Infotech</a></div>
+        </div>
+      </div>
+    </footer>
+    <!-- Toolbar for handheld devices (Default)-->
+    <div class="handheld-toolbar">
+      <div class="d-table table-layout-fixed w-100">
+        <a class="d-table-cell handheld-toolbar-item" href="javascript:;">
+          <span class="handheld-toolbar-icon">
+            <i class="ci-heart"></i>
+          </span>
+          <span class="handheld-toolbar-label">Wishlist</span>
+        </a>
+        <a class="d-table-cell handheld-toolbar-item" href="javascript:;" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" onclick="window.scrollTo(0, 0)">
+          <span class="handheld-toolbar-icon">
+            <i class="ci-menu"></i>
+          </span>
+          <span class="handheld-toolbar-label">Menu</span>
+        </a>
+        <a class="d-table-cell handheld-toolbar-item" href="javascript:;">
+          <span class="handheld-toolbar-icon">
+            <i class="ci-cart"></i>
+            <span class="badge bg-primary rounded-pill ms-1">4</span>
+          </span>
+          <span class="handheld-toolbar-label">$265.00</span>
+        </a>
+      </div>
+    </div>
+    <!-- Back To Top Button--><a class="btn-scroll-top" href="#top" data-scroll><span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span><i class="btn-scroll-top-icon ci-arrow-up">   </i></a>
+    <!-- Vendor scrits: js libraries and plugins-->
+    <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/simplebar/dist/simplebar.min.js"></script>
+    <script src="vendor/tiny-slider/dist/min/tiny-slider.js"></script>
+    <script src="vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="vendor/drift-zoom/dist/Drift.min.js"></script>
+    <script src="vendor/lightgallery/lightgallery.min.js"></script>
+    <script src="vendor/lightgallery/plugins/video/lg-video.min.js"></script>
+    <!-- Main theme script-->
+    <script src="js/theme.min.js"></script>
+  </body>
+  </html>

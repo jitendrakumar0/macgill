@@ -1,0 +1,1928 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="utf-8">
+    <title>MacGill | Shop Categories</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="MacGill">
+    <meta name="keywords" content="bootstrap, shop, e-commerce, market, modern, responsive,  business, mobile, bootstrap, html5, css3, js, gallery, slider, touch, creative, clean">
+    <meta name="author" content="Createx Studio">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/logo/mgil-favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/logo/mgil-favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logo/mgil-favicon.ico">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" color="#fe6a6a" href="safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Vendor Styles including: Font Icons, Plugins, etc.-->
+    <link rel="stylesheet" media="screen" href="vendor/simplebar/dist/simplebar.min.css"/>
+    <link rel="stylesheet" media="screen" href="vendor/tiny-slider/dist/tiny-slider.css"/>
+    <link rel="stylesheet" media="screen" href="vendor/nouislider/dist/nouislider.min.css"/>
+    <link rel="stylesheet" media="screen" href="vendor/drift-zoom/dist/drift-basic.min.css"/>
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="css/theme.min.css">
+
+  </head>
+  <!-- Body-->
+  <body class="handheld-toolbar-enabled">
+    <!-- Sign in / sign up modal-->
+    <div class="modal fade" id="signin-modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-secondary">
+            <ul class="nav nav-tabs card-header-tabs" role="tablist">
+              <li class="nav-item"><a class="nav-link fw-medium active" href="#signin-tab" data-bs-toggle="tab" role="tab" aria-selected="true"><i class="ci-unlocked me-2 mt-n1"></i>Sign in</a></li>
+              <li class="nav-item"><a class="nav-link fw-medium" href="#signup-tab" data-bs-toggle="tab" role="tab" aria-selected="false"><i class="ci-user me-2 mt-n1"></i>Sign up</a></li>
+            </ul>
+            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body tab-content py-4">
+            <form class="needs-validation tab-pane fade show active" autocomplete="off" novalidate id="signin-tab">
+              <div class="mb-3">
+                <label class="form-label" for="si-email">Email address</label>
+                <input class="form-control" type="email" id="si-email" placeholder="johndoe@example.com" required>
+                <div class="invalid-feedback">Please provide a valid email address.</div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="si-password">Password</label>
+                <div class="password-toggle">
+                  <input class="form-control" type="password" id="si-password" required>
+                  <label class="password-toggle-btn" aria-label="Show/hide password">
+                    <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="mb-3 d-flex flex-wrap justify-content-between">
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="checkbox" id="si-remember">
+                  <label class="form-check-label" for="si-remember">Remember me</label>
+                </div><a class="fs-sm" href="javascript:;">Forgot password?</a>
+              </div>
+              <button class="btn btn-primary btn-shadow d-block w-100" type="submit">Sign in</button>
+            </form>
+            <form class="needs-validation tab-pane fade" autocomplete="off" novalidate id="signup-tab">
+              <div class="mb-3">
+                <label class="form-label" for="su-name">Full name</label>
+                <input class="form-control" type="text" id="su-name" placeholder="John Doe" required>
+                <div class="invalid-feedback">Please fill in your name.</div>
+              </div>
+              <div class="mb-3">
+                <label for="su-email">Email address</label>
+                <input class="form-control" type="email" id="su-email" placeholder="johndoe@example.com" required>
+                <div class="invalid-feedback">Please provide a valid email address.</div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="su-password">Password</label>
+                <div class="password-toggle">
+                  <input class="form-control" type="password" id="su-password" required>
+                  <label class="password-toggle-btn" aria-label="Show/hide password">
+                    <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="su-password-confirm">Confirm password</label>
+                <div class="password-toggle">
+                  <input class="form-control" type="password" id="su-password-confirm" required>
+                  <label class="password-toggle-btn" aria-label="Show/hide password">
+                    <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"></span>
+                  </label>
+                </div>
+              </div>
+              <button class="btn btn-primary btn-shadow d-block w-100" type="submit">Sign up</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main class="page-wrapper">
+      <!-- Navbar 3 Level (Light)-->
+      <header class="shadow-sm">
+        <!-- Topbar-->
+        <div class="topbar topbar-dark bg-dark">
+          <div class="container">
+            <div>
+              <!-- <div class="topbar-text dropdown disable-autohide"><a class="topbar-link dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown"><img class="me-2" src="img/flags/en.png" width="20" alt="English">Eng / $</a>
+                <ul class="dropdown-menu my-1">
+                  <li class="dropdown-item">
+                    <select class="form-select form-select-sm">
+                      <option value="usd">$ USD</option>
+                      <option value="eur">€ EUR</option>
+                      <option value="ukp">£ UKP</option>
+                      <option value="jpy">¥ JPY</option>
+                    </select>
+                  </li>
+                  <li><a class="dropdown-item pb-1" href="javascript:;"><img class="me-2" src="img/flags/fr.png" width="20" alt="Français">Français</a></li>
+                  <li><a class="dropdown-item pb-1" href="javascript:;"><img class="me-2" src="img/flags/de.png" width="20" alt="Deutsch">Deutsch</a></li>
+                  <li><a class="dropdown-item" href="javascript:;"><img class="me-2" src="img/flags/it.png" width="20" alt="Italiano">Italiano</a></li>
+                </ul>
+              </div>
+              <div class="topbar-text text-nowrap d-none d-md-inline-block border-start border-light ps-3 ms-3"><span class="text-muted me-1">Available 24/7 at</span><a class="topbar-link" href="tel:00331697720">(00) 33 169 7720</a></div> -->
+              <div class="topbar-text text-nowrap d-none d-md-inline-block">Welcome to MacGill School Nurse Supplies!</div>
+            </div>
+            <div class="topbar-text dropdown d-md-none ms-auto"><a class="topbar-link dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown">Wishlist / Compare / Track</a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="javascript:;"><i class="ci-heart text-muted me-2"></i>Wishlist (3)</a></li>
+                <li><a class="dropdown-item" href="javascript:;"><i class="ci-compare text-muted me-2"></i>Compare (3)</a></li>
+                <li><a class="dropdown-item" href="javascript:;"><i class="ci-star text-muted me-2"></i>My Shopping List</a></li>
+                <!-- <li><a class="dropdown-item" href="order-tracking.html"><i class="ci-location text-muted me-2"></i>Order tracking</a></li> -->
+              </ul>
+            </div>
+            <div class="d-none d-md-block ms-3 text-nowrap">
+              <a class="topbar-link d-none d-md-inline-block" href="javascript:;"><i class="ci-heart mt-n1"></i>Wishlist (3)</a>
+              <a class="topbar-link ms-3 ps-3 border-start border-light d-none d-md-inline-block" href="javascript:;"><i class="ci-compare mt-n1"></i>Compare (3)</a>
+              <a class="topbar-link ms-3 border-start border-light ps-3 d-none d-md-inline-block" href="javascript:;"><i class="ci-star mt-n1"></i>My Shopping List</a>
+              <!-- <a class="topbar-link ms-3 border-start border-light ps-3 d-none d-md-inline-block" href="order-tracking.html"><i class="ci-location mt-n1"></i>Order tracking</a> -->
+            </div>
+          </div>
+        </div>
+        <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
+        <div class="navbar-sticky bg-light">
+          <div class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+              <a class="navbar-brand d-none d-sm-block me-3 flex-shrink-0" href="index.html">
+                <img class="w-100" src="images/logo/logo-macgill.png" alt="Logo">
+              </a>
+              <a class="navbar-brand d-sm-none me-2" href="index.html">
+                <img src="images/logo/logo-macgill.png" width="100" alt="Logo">
+              </a>
+              <!-- Search-->
+              <div class="input-group d-none d-lg-flex flex-nowrap mx-4"><i class="ci-search position-absolute top-50 start-0 translate-middle-y ms-3"></i>
+                <input class="form-control rounded-start w-100" type="text" placeholder="Search for products">
+                <select class="form-select flex-shrink-0" style="width: 10.5rem;">
+                  <option>All categories</option>
+                  <option>COVID-19</option>
+                  <option>A+ Choice Products</option>
+                  <option>Instruments</option>
+                </select>
+              </div>
+              <!-- Toolbar-->
+              <div class="navbar-toolbar d-flex flex-shrink-0 align-items-center">
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"><span class="navbar-toggler-icon"></span></button> -->
+                <a class="navbar-tool navbar-stuck-toggler" href="javascript:;"><span class="navbar-tool-tooltip">Toggle menu</span>
+                  <div class="navbar-tool-icon-box d-flex align-items-center justify-content-center"><i class="navbar-tool-icon ci-menu"></i></div>
+                </a>
+                <a class="navbar-tool ms-1 ms-lg-0 me-n1 me-lg-2" href="#signin-modal" data-bs-toggle="modal">
+                  <div class="navbar-tool-icon-box d-flex align-items-center justify-content-center"><i class="navbar-tool-icon ci-user"></i></div>
+                  <div class="navbar-tool-text ms-n3"><small>Hello, Sign in</small>My Account</div>
+                </a>
+                <div class="navbar-tool dropdown ms-3">
+                  <a class="navbar-tool-icon-box d-flex align-items-center justify-content-center bg-secondary dropdown-toggle" href="javascript:;">
+                    <span class="navbar-tool-label">4</span>
+                    <i class="navbar-tool-icon ci-cart"></i>
+                  </a>
+                  <a class="navbar-tool-text" href="javascript:;"><small>My Cart</small>$1,247.00</a>
+                  <!-- Cart dropdown-->
+                  <div class="dropdown-menu dropdown-menu-end">
+                    <div class="widget widget-cart px-3 pt-2 pb-3" style="width: 20rem;">
+                      <div style="height: 15rem;" data-simplebar data-simplebar-auto-hide="false">
+                        <div class="widget-cart-item pb-2 border-bottom">
+                          <button class="btn-close text-danger" type="button" aria-label="Remove"><span aria-hidden="true">&times;</span></button>
+                          <div class="d-flex align-items-center"><a class="d-block flex-shrink-0" href="javascript:;"><img src="images/product/product-1.png" width="64" alt="Product"></a>
+                            <div class="ps-2">
+                              <h6 class="widget-product-title"><a href="javascript:;">Kids KN95 Masks, Black, 50/Box</a></h6>
+                              <div class="widget-product-meta"><span class="text-accent me-2">$198.<small>00</small></span><span class="text-muted">x 1</span></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="widget-cart-item py-2 border-bottom">
+                          <button class="btn-close text-danger" type="button" aria-label="Remove"><span aria-hidden="true">&times;</span></button>
+                          <div class="d-flex align-items-center"><a class="d-block flex-shrink-0" href="javascript:;"><img src="images/product/product-2.png" width="64" alt="Product"></a>
+                            <div class="ps-2">
+                              <h6 class="widget-product-title"><a href="javascript:;">Dial® Liquid Soap, 7.5 Oz. Pump</a></h6>
+                              <div class="widget-product-meta"><span class="text-accent me-2">$98.<small>00</small></span><span class="text-muted">x 1</span></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="widget-cart-item pb-2 border-bottom">
+                          <button class="btn-close text-danger" type="button" aria-label="Remove"><span aria-hidden="true">&times;</span></button>
+                          <div class="d-flex align-items-center"><a class="d-block flex-shrink-0" href="javascript:;"><img src="images/product/product-1.png" width="64" alt="Product"></a>
+                            <div class="ps-2">
+                              <h6 class="widget-product-title"><a href="javascript:;">Kids KN95 Masks, Black, 50/Box</a></h6>
+                              <div class="widget-product-meta"><span class="text-accent me-2">$198.<small>00</small></span><span class="text-muted">x 1</span></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="widget-cart-item py-2 border-bottom">
+                          <button class="btn-close text-danger" type="button" aria-label="Remove"><span aria-hidden="true">&times;</span></button>
+                          <div class="d-flex align-items-center"><a class="d-block flex-shrink-0" href="javascript:;"><img src="images/product/product-2.png" width="64" alt="Product"></a>
+                            <div class="ps-2">
+                              <h6 class="widget-product-title"><a href="javascript:;">Dial® Liquid Soap, 7.5 Oz. Pump</a></h6>
+                              <div class="widget-product-meta"><span class="text-accent me-2">$98.<small>00</small></span><span class="text-muted">x 1</span></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-wrap justify-content-between align-items-center py-3">
+                        <div class="fs-sm me-2 py-2"><span class="text-muted">Subtotal:</span><span class="text-accent fs-base ms-1">$1,247.<small>00</small></span></div><a class="btn btn-outline-secondary btn-sm" href="javascript:;">Expand cart<i class="ci-arrow-right ms-1 me-n1"></i></a>
+                      </div><a class="btn btn-primary btn-sm d-block w-100" href="javascript:;"><i class="ci-card me-2 fs-base align-middle"></i>Checkout</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="navbar navbar-expand-lg navbar-light navbar-stuck-menu mt-n2 pt-0 pb-2">
+            <div class="container">
+              <div class="collapse navbar-collapse" id="navbarCollapse">
+                <!-- Search-->
+                <div class="input-group d-lg-none my-3"><i class="ci-search position-absolute top-50 start-0 translate-middle-y ms-3"></i>
+                  <input class="form-control rounded-start" type="text" placeholder="Search for products">
+                </div>
+                <!-- Departments menu-->
+                <ul class="navbar-nav navbar-mega-nav pe-lg-2 me-lg-2">
+                  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-lg-0" href="javascript:;" data-bs-toggle="dropdown" data-bs-auto-close="outside"><i class="ci-menu align-middle mt-n1 me-2"></i>Shop</a>
+                    <ul class="dropdown-menu">
+                      <li class="dropdown mega-dropdown"><a class="dropdown-item" href="javascript:;"><i class="ci-frozen opacity-60 fs-lg mt-n1 me-2"></i>Top Sellers</a></li>
+                      <li class="dropdown mega-dropdown"><a class="dropdown-item" href="javascript:;"><i class="ci-frozen opacity-60 fs-lg mt-n1 me-2"></i>Promos for School Nurse Day 2022</a></li>
+                      <li class="dropdown mega-dropdown"><a class="dropdown-item dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown"><i class="ci-frozen opacity-60 fs-lg mt-n1 me-2"></i>In Stock COVID-19 Supplies</a>
+                        <div class="dropdown-menu p-0">
+                          <div class="d-flex flex-wrap flex-sm-nowrap px-2">
+                            <div class="mega-dropdown-column pt-4 pb-0 py-sm-4 px-3">
+                              <div class="widget widget-links">
+                                <!-- <h6 class="fs-base mb-3">Computers</h6> -->
+                                <ul class="widget-list">
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Covid Tests</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Non-Contact Thermometers</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Cleaning Products</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Gloves</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Hand Sanitizer</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Hand Soap</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Social Distancing</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Personal Protection </a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Hand Washing Education</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <!-- <div class="mega-dropdown-column py-4 px-3">
+                              <div class="widget widget-links">
+                                <h6 class="fs-base mb-3">Accessories</h6>
+                                <ul class="widget-list">
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Monitors</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Bags, Cases &amp; Sleeves</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Batteries</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Charges &amp; Adapters</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Cooling Pads</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Mounts</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Replacement Screens</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Security Locks</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Stands</a></li>
+                                </ul>
+                              </div>
+                            </div> -->
+                            <div class="mega-dropdown-column d-none d-lg-block py-4 text-center"><a class="d-block mb-2" href="javascript:;"><img class="w-50" src="images/img-1.jpg" alt="In Stock COVID-19 Supplies"></a>
+                              <div class="fs-sm mb-3">Starting from <span class='fw-medium'>$9.<small>99</small></span></div><a class="btn btn-primary btn-shadow btn-sm" href="javascript:;">See offers<i class="ci-arrow-right fs-xs ms-1"></i></a>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="dropdown mega-dropdown"><a class="dropdown-item dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown"><i class="ci-frozen opacity-60 fs-lg mt-n1 me-2"></i>A+ Choice Products</a>
+                        <div class="dropdown-menu p-0">
+                          <div class="d-flex flex-wrap flex-md-nowrap px-2">
+                            <div class="mega-dropdown-column pt-4 pb-0 py-sm-4 px-3">
+                              <div class="widget widget-links mb-3">
+                                <!-- <h6 class="fs-base mb-3">Smartphones</h6> -->
+                                <ul class="widget-list">
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Bandages</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">First Aid & Wound Care</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Emergency Response</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">General Health</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Paper, Plastic & Linen</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Cleaning & Infection Control</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Gloves & Hand Care</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Thermometry</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Respiratory & CPR</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Diagnostic</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Special Needs</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Education Material</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Furniture</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Hearing & Vision Screening</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="mega-dropdown-column d-none d-lg-block py-4 text-center"><a class="d-block mb-2" href="javascript:;"><img class="" src="images/img-2.jpg" alt="A+ Choice Products"></a>
+                              <div class="fs-sm mb-3">Starting from <span class='fw-medium'>$127.<small>00</small></span></div><a class="btn btn-primary btn-shadow btn-sm" href="javascript:;">See offers<i class="ci-arrow-right fs-xs ms-1"></i></a>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="dropdown mega-dropdown"><a class="dropdown-item dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown"><i class="ci-frozen opacity-60 fs-lg mt-n1 me-2"></i>Web Only</a>
+                        <div class="dropdown-menu p-0">
+                          <div class="d-flex flex-wrap flex-md-nowrap px-2">
+                            <div class="mega-dropdown-column pt-4 pb-0 py-sm-4 px-3">
+                              <div class="widget widget-links">
+                                <ul class="widget-list">
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Emergency Response</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">General Health</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Paper, Plastic & Linen</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Cleaning & Infection Control</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Gloves & Hand Care</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Thermometry</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Respiratory & CPR</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Diagnostic</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Education Material</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Furniture</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Hearing & Vision </a></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="mega-dropdown-column d-none d-lg-block py-4 text-center"><a class="d-block mb-2" href="javascript:;"><img src="images/img-3.jpg" alt="Web Only"></a>
+                              <div class="fs-sm mb-3">Starting from <span class='fw-medium'>$78.<small>00</small></span></div><a class="btn btn-primary btn-shadow btn-sm" href="javascript:;">See offers<i class="ci-arrow-right fs-xs ms-1"></i></a>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="dropdown mega-dropdown"><a class="dropdown-item dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown"><i class="ci-frozen opacity-60 fs-lg mt-n1 me-2"></i>Bandages</a>
+                        <div class="dropdown-menu p-0">
+                          <div class="d-flex flex-wrap flex-md-nowrap px-2">
+                            <div class="mega-dropdown-column pt-4 pb-0 py-sm-4 px-3">
+                              <div class="widget widget-links">
+                                <ul class="widget-list">
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 1</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 2</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 3</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 4</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 5</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 6</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 7</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 8</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 9</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 10</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="mega-dropdown-column py-4 px-3">
+                              <div class="widget widget-links">
+                                <ul class="widget-list">
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 1</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 2</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 3</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 4</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 5</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 6</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 7</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 8</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 9</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 10</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="mega-dropdown-column d-none d-lg-block py-4 text-center"><a class="d-block mb-2" href="javascript:;"><img src="images/img-4.jpg" alt="Bandages"></a>
+                              <div class="fs-sm mb-3">Starting from <span class='fw-medium'>$210.<small>00</small></span></div><a class="btn btn-primary btn-shadow btn-sm" href="javascript:;">See offers<i class="ci-arrow-right fs-xs ms-1"></i></a>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="dropdown mega-dropdown"><a class="dropdown-item dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown"><i class="ci-frozen opacity-60 fs-lg mt-n1 me-2"></i>First Aid & Wound Care</a>
+                        <div class="dropdown-menu p-0">
+                          <div class="d-flex flex-wrap flex-md-nowrap px-2">
+                            <div class="mega-dropdown-column pt-4 pb-0 py-sm-4 px-3">
+                              <div class="widget widget-links">
+                                <ul class="widget-list">
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 1</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 2</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 3</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 4</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 5</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 6</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 7</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 8</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 9</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 10</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="mega-dropdown-column d-none d-lg-block py-4 text-center"><a class="d-block mb-2" href="javascript:;"><img src="images/img-5.png" alt="First Aid & Wound Care"></a>
+                              <div class="fs-sm mb-3">Starting from <span class='fw-medium'>$35.<small>99</small></span></div><a class="btn btn-primary btn-shadow btn-sm" href="javascript:;">See offers<i class="ci-arrow-right fs-xs ms-1"></i></a>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="dropdown mega-dropdown"><a class="dropdown-item dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown"><i class="ci-frozen opacity-60 fs-lg mt-n1 me-2"></i>Emergency Response & Safety</a>
+                        <div class="dropdown-menu p-0">
+                          <div class="d-flex flex-wrap flex-md-nowrap px-2">
+                            <div class="mega-dropdown-column py-4 px-3">
+                              <div class="widget widget-links">
+                                <ul class="widget-list">
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 1</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 2</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 3</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 4</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 5</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 6</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 7</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 8</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 9</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 10</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="dropdown mega-dropdown"><a class="dropdown-item dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown"><i class="ci-frozen opacity-60 fs-lg mt-n1 me-2"></i>General Health & Non-Prescription</a>
+                        <div class="dropdown-menu p-0">
+                          <div class="d-flex flex-wrap flex-md-nowrap px-2">
+                            <div class="mega-dropdown-column pt-4 pb-0 py-sm-4 px-3">
+                              <div class="widget widget-links mb-3">
+                                <ul class="widget-list">
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 1</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 2</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 3</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 4</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 5</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 6</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 7</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 8</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 9</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 10</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="mega-dropdown-column d-none d-lg-block py-4 text-center"><a class="d-block mb-2" href="javascript:;"><img src="images/img-6.jpg" alt="General Health & Non-Prescription"></a>
+                              <div class="fs-sm mb-3">Starting from <span class='fw-medium'>$54.<small>00</small></span></div><a class="btn btn-primary btn-shadow btn-sm" href="javascript:;">See offers<i class="ci-arrow-right fs-xs ms-1"></i></a>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="dropdown mega-dropdown"><a class="dropdown-item dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown"><i class="ci-frozen opacity-60 fs-lg mt-n1 me-2"></i>Instruments</a>
+                        <div class="dropdown-menu p-0">
+                          <div class="d-flex flex-wrap flex-md-nowrap px-2">
+                            <div class="mega-dropdown-column pt-4 pb-0 py-sm-4 px-3">
+                              <div class="widget widget-links">
+                                <ul class="widget-list">
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 1</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 2</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 3</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 4</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 5</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 6</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 7</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 8</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 9</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 10</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="mega-dropdown-column d-none d-lg-block py-4 text-center"><a class="d-block mb-2" href="javascript:;"><img src="images/img-7.jpg" alt="Instruments"></a>
+                              <div class="fs-sm mb-3">Starting from <span class='fw-medium'>$19.<small>00</small></span></div><a class="btn btn-primary btn-shadow btn-sm" href="javascript:;">See offers<i class="ci-arrow-right fs-xs ms-1"></i></a>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="dropdown mega-dropdown"><a class="dropdown-item dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown"><i class="ci-frozen opacity-60 fs-lg mt-n1 me-2"></i>Paper, Plastic & Linen</a>
+                        <div class="dropdown-menu p-0">
+                          <div class="d-flex flex-wrap flex-md-nowrap px-2">
+                            <div class="mega-dropdown-column pt-4 pb-0 py-sm-4 px-3">
+                              <div class="widget widget-links">
+                                <ul class="widget-list">
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 1</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 2</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 3</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 4</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 5</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 6</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 7</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 8</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 9</a></li>
+                                  <li class="widget-list-item pb-1"><a class="widget-list-link" href="javascript:;">Menu 10</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <!-- Primary menu-->
+                <ul class="navbar-nav w-100 justify-content-end">
+                  <li class="nav-item active"><a class="nav-link" href="index.html">Home</a>
+                    <!-- <ul class="dropdown-menu">
+                      <li class="dropdown position-static mb-0"><a class="dropdown-item border-bottom py-2" href="home-nft.html"><span class="d-block text-heading">NFT Marketplace<span class="badge bg-danger ms-1">NEW</span></span><small class="d-block text-muted">NFTs, Multi-vendor, Auctions</small></a>
+                        <div class="dropdown-menu h-100 animation-none mt-0 p-3"><a class="d-block" href="home-nft.html" style="width: 250px;"><img src="img/home/preview/th08.jpg" alt="NFT Marketplace"></a></div>
+                      </li>
+                      <li class="dropdown position-static mb-0"><a class="dropdown-item py-2 border-bottom" href="home-fashion-store-v1.html"><span class="d-block text-heading">Fashion Store v.1</span><small class="d-block text-muted">Classic shop layout</small></a>
+                        <div class="dropdown-menu h-100 animation-none mt-0 p-3"><a class="d-block" href="home-fashion-store-v1.html" style="width: 250px;"><img src="img/home/preview/th01.jpg" alt="Fashion Store v.1"></a></div>
+                      </li>
+                      <li class="dropdown position-static mb-0"><a class="dropdown-item py-2 border-bottom" href="home-electronics-store.html"><span class="d-block text-heading">Electronics Store</span><small class="d-block text-muted">Slider + Promo banners</small></a>
+                        <div class="dropdown-menu h-100 animation-none mt-0 p-3"><a class="d-block" href="home-electronics-store.html" style="width: 250px;"><img src="img/home/preview/th03.jpg" alt="Electronics Store"></a></div>
+                      </li>
+                      <li class="dropdown position-static mb-0"><a class="dropdown-item py-2 border-bottom" href="home-marketplace.html"><span class="d-block text-heading">Marketplace</span><small class="d-block text-muted">Multi-vendor, digital goods</small></a>
+                        <div class="dropdown-menu h-100 animation-none mt-0 p-3"><a class="d-block" href="home-marketplace.html" style="width: 250px;"><img src="img/home/preview/th04.jpg" alt="Marketplace"></a></div>
+                      </li>
+                      <li class="dropdown position-static mb-0"><a class="dropdown-item py-2 border-bottom" href="home-grocery-store.html"><span class="d-block text-heading">Grocery Store</span><small class="d-block text-muted">Full width + Side menu</small></a>
+                        <div class="dropdown-menu h-100 animation-none mt-0 p-3"><a class="d-block" href="home-grocery-store.html" style="width: 250px;"><img src="img/home/preview/th06.jpg" alt="Grocery Store"></a></div>
+                      </li>
+                      <li class="dropdown position-static mb-0"><a class="dropdown-item py-2 border-bottom" href="home-food-delivery.html"><span class="d-block text-heading">Food Delivery Service</span><small class="d-block text-muted">Food &amp; Beverages delivery</small></a>
+                        <div class="dropdown-menu h-100 animation-none mt-0 p-3"><a class="d-block" href="home-food-delivery.html" style="width: 250px;"><img src="img/home/preview/th07.jpg" alt="Food Delivery Service"></a></div>
+                      </li>
+                      <li class="dropdown position-static mb-0"><a class="dropdown-item py-2 border-bottom" href="home-fashion-store-v2.html"><span class="d-block text-heading">Fashion Store v.2</span><small class="d-block text-muted">Slider + Featured categories</small></a>
+                        <div class="dropdown-menu h-100 animation-none mt-0 p-3"><a class="d-block" href="home-fashion-store-v2.html" style="width: 250px;"><img src="img/home/preview/th02.jpg" alt="Fashion Store v.2"></a></div>
+                      </li>
+                      <li class="dropdown position-static mb-0"><a class="dropdown-item py-2" href="home-single-store.html"><span class="d-block text-heading">Single Product Store</span><small class="d-block text-muted">Single product / mono brand</small></a>
+                        <div class="dropdown-menu h-100 animation-none mt-0 p-3"><a class="d-block" href="home-single-store.html" style="width: 250px;"><img src="img/home/preview/th05.jpg" alt="Single Product / Brand Store"></a></div>
+                      </li>
+                    </ul> -->
+                  </li>
+                  <li class="nav-item"><a class="nav-link" href="javascript:;">About MacGill</a>
+                  <li class="nav-item"><a class="nav-link" href="blog-main.html">Blog</a>
+                  <li class="nav-item"><a class="nav-link" href="javascript:;">Resources</a>
+                  <li class="nav-item"><a class="nav-link" href="javascript:;">Shipping</a>
+                  <li class="nav-item"><a class="nav-link" href="javascript:;">Request a Catalog</a>
+                  <li class="nav-item"><a class="nav-link" href="javascript:;">Contact</a>
+                  <!-- <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown">Shop</a>
+                    <div class="dropdown-menu p-0">
+                      <div class="d-flex flex-wrap flex-sm-nowrap px-2">
+                        <div class="mega-dropdown-column pt-1 pt-lg-4 pb-4 px-2 px-lg-3">
+                          <div class="widget widget-links mb-4">
+                            <h6 class="fs-base mb-3">Shop layouts</h6>
+                            <ul class="widget-list">
+                              <li class="widget-list-item"><a class="widget-list-link" href="shop-grid-ls.html">Shop Grid - Left Sidebar</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="shop-grid-rs.html">Shop Grid - Right Sidebar</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="shop-grid-ft.html">Shop Grid - Filters on Top</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="shop-list-ls.html">Shop List - Left Sidebar</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="shop-list-rs.html">Shop List - Right Sidebar</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="shop-list-ft.html">Shop List - Filters on Top</a></li>
+                            </ul>
+                          </div>
+                          <div class="widget widget-links mb-4">
+                            <h6 class="fs-base mb-3">Marketplace</h6>
+                            <ul class="widget-list">
+                              <li class="widget-list-item"><a class="widget-list-link" href="marketplace-category.html">Category Page</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="marketplace-single.html">Single Item Page</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="marketplace-vendor.html">Vendor Page</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="marketplace-cart.html">Cart</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="marketplace-checkout.html">Checkout</a></li>
+                            </ul>
+                          </div>
+                          <div class="widget widget-links">
+                            <h6 class="fs-base mb-3">Grocery store</h6>
+                            <ul class="widget-list">
+                              <li class="widget-list-item"><a class="widget-list-link" href="grocery-catalog.html">Product Catalog</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="grocery-single.html">Single Product Page</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="grocery-checkout.html">Checkout</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="mega-dropdown-column pt-1 pt-lg-4 pb-4 px-2 px-lg-3">
+                          <div class="widget widget-links mb-4">
+                            <h6 class="fs-base mb-3">Food Delivery</h6>
+                            <ul class="widget-list">
+                              <li class="widget-list-item"><a class="widget-list-link" href="food-delivery-category.html">Category Page</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="food-delivery-single.html">Single Item (Restaurant)</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="food-delivery-cart.html">Cart (Your Order)</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="food-delivery-checkout.html">Checkout (Address &amp; Payment)</a></li>
+                            </ul>
+                          </div>
+                          <div class="widget widget-links">
+                            <h6 class="fs-base mb-3">NFT Marketplace<span class="badge bg-danger ms-1">NEW</span></h6>
+                            <ul class="widget-list">
+                              <li class="widget-list-item"><a class="widget-list-link" href="nft-catalog-v1.html">Catalog v.1</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="nft-catalog-v2.html">Catalog v.2</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="nft-single-auction-live.html">Single Item - Auction Live</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="nft-single-auction-ended.html">Single Item - Auction Ended</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="nft-single-buy.html">Single Item - Buy Now</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="nft-vendor.html">Vendor Page</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="nft-connect-wallet.html">Connect Wallet</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="nft-create-item.html">Create New Item</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="mega-dropdown-column pt-1 pt-lg-4 px-2 px-lg-3">
+                          <div class="widget widget-links mb-4">
+                            <h6 class="fs-base mb-3">Shop pages</h6>
+                            <ul class="widget-list">
+                              <li class="widget-list-item"><a class="widget-list-link" href="shop-categories.html">Shop Categories</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="shop-single-v1.html">Product Page v.1</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="product-detail.html">Product Page v.2</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="shop-cart.html">Cart</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="checkout-details.html">Checkout - Details</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="checkout-shipping.html">Checkout - Shipping</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="checkout-payment.html">Checkout - Payment</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="checkout-review.html">Checkout - Review</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="checkout-complete.html">Checkout - Complete</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="order-tracking.html">Order Tracking</a></li>
+                              <li class="widget-list-item"><a class="widget-list-link" href="comparison.html">Product Comparison</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li> -->
+                  <!-- <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown" data-bs-auto-close="outside">Account</a>
+                    <ul class="dropdown-menu">
+                      <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown">Shop User Account</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="account-orders.html">Orders History</a></li>
+                          <li><a class="dropdown-item" href="account-profile.html">Profile Settings</a></li>
+                          <li><a class="dropdown-item" href="account-address.html">Account Addresses</a></li>
+                          <li><a class="dropdown-item" href="account-payment.html">Payment Methods</a></li>
+                          <li><a class="dropdown-item" href="account-wishlist.html">Wishlist</a></li>
+                          <li><a class="dropdown-item" href="account-tickets.html">My Tickets</a></li>
+                          <li><a class="dropdown-item" href="account-single-ticket.html">Single Ticket</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown">Vendor Dashboard</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="dashboard-settings.html">Settings</a></li>
+                          <li><a class="dropdown-item" href="dashboard-purchases.html">Purchases</a></li>
+                          <li><a class="dropdown-item" href="dashboard-favorites.html">Favorites</a></li>
+                          <li><a class="dropdown-item" href="dashboard-sales.html">Sales</a></li>
+                          <li><a class="dropdown-item" href="dashboard-products.html">Products</a></li>
+                          <li><a class="dropdown-item" href="dashboard-add-new-product.html">Add New Product</a></li>
+                          <li><a class="dropdown-item" href="dashboard-payouts.html">Payouts</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown">NFT Marketplace<span class="badge bg-danger ms-1">NEW</span></a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="nft-account-settings.html">Profile Settings</a></li>
+                          <li><a class="dropdown-item" href="nft-account-payouts.html">Wallet &amp; Payouts</a></li>
+                          <li><a class="dropdown-item" href="nft-account-my-items.html">My Items</a></li>
+                          <li><a class="dropdown-item" href="nft-account-my-collections.html">My Collections</a></li>
+                          <li><a class="dropdown-item" href="nft-account-favorites.html">Favorites</a></li>
+                          <li><a class="dropdown-item" href="nft-account-notifications.html">Notifications</a></li>
+                        </ul>
+                      </li>
+                      <li><a class="dropdown-item" href="account-signin.html">Sign In / Sign Up</a></li>
+                      <li><a class="dropdown-item" href="account-password-recovery.html">Password Recovery</a></li>
+                    </ul>
+                  </li> -->
+                  <!-- <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown" data-bs-auto-close="outside">Pages</a>
+                    <ul class="dropdown-menu">
+                      <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown">Navbar Variants</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="navbar-1-level-light.html">1 Level Light</a></li>
+                          <li><a class="dropdown-item" href="navbar-1-level-dark.html">1 Level Dark</a></li>
+                          <li><a class="dropdown-item" href="navbar-2-level-light.html">2 Level Light</a></li>
+                          <li><a class="dropdown-item" href="navbar-2-level-dark.html">2 Level Dark</a></li>
+                          <li><a class="dropdown-item" href="navbar-3-level-light.html">3 Level Light</a></li>
+                          <li><a class="dropdown-item" href="navbar-3-level-dark.html">3 Level Dark</a></li>
+                          <li><a class="dropdown-item" href="home-electronics-store.html">Electronics Store</a></li>
+                          <li><a class="dropdown-item" href="home-marketplace.html">Marketplace</a></li>
+                          <li><a class="dropdown-item" href="home-grocery-store.html">Side Menu (Grocery)</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                      <li><a class="dropdown-item" href="contacts.html">Contacts</a></li>
+                      <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown">Help Center</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="help-topics.html">Help Topics</a></li>
+                          <li><a class="dropdown-item" href="help-single-topic.html">Single Topic</a></li>
+                          <li><a class="dropdown-item" href="help-submit-request.html">Submit a Request</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown">404 Not Found</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="404-simple.html">404 - Simple Text</a></li>
+                          <li><a class="dropdown-item" href="404-illustration.html">404 - Illustration</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="sticky-footer.html">Sticky Footer Demo</a></li>
+                    </ul>
+                  </li> -->
+                  <!-- <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown" data-bs-auto-close="outside">Blog</a>
+                    <ul class="dropdown-menu">
+                      <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown">Blog List Layouts</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="blog-list-sidebar.html">List with Sidebar</a></li>
+                          <li><a class="dropdown-item" href="blog-list.html">List no Sidebar</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown">Blog Grid Layouts</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="blog-grid-sidebar.html">Grid with Sidebar</a></li>
+                          <li><a class="dropdown-item" href="blog-grid.html">Grid no Sidebar</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown">Single Post Layouts</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="blog-single-sidebar.html">Article with Sidebar</a></li>
+                          <li><a class="dropdown-item" href="blog-single.html">Article no Sidebar</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li> -->
+                  <!-- <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="javascript:;" data-bs-toggle="dropdown">Docs / Components</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="docs/dev-setup.html">
+                          <div class="d-flex">
+                            <div class="lead text-muted pt-1"><i class="ci-book"></i></div>
+                            <div class="ms-2"><span class="d-block text-heading">Documentation</span><small class="d-block text-muted">Kick-start customization</small></div>
+                          </div></a></li>
+                      <li class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="components/typography.html">
+                          <div class="d-flex">
+                            <div class="lead text-muted pt-1"><i class="ci-server"></i></div>
+                            <div class="ms-2"><span class="d-block text-heading">Components<span class="badge bg-info ms-2">40+</span></span><small class="d-block text-muted">Faster page building</small></div>
+                          </div></a></li>
+                      <li class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="docs/changelog.html">
+                          <div class="d-flex">
+                            <div class="lead text-muted pt-1"><i class="ci-edit"></i></div>
+                            <div class="ms-2"><span class="d-block text-heading">Changelog<span class="badge bg-success ms-2">v2.5.1</span></span><small class="d-block text-muted">Regular updates</small></div>
+                          </div></a></li>
+                      <li class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="mailto:support@createx.studio">
+                          <div class="d-flex">
+                            <div class="lead text-muted pt-1"><i class="ci-help"></i></div>
+                            <div class="ms-2"><span class="d-block text-heading">Support</span><small class="d-block text-muted">support@createx.studio</small></div>
+                          </div></a></li>
+                    </ul>
+                  </li> -->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- Page Title-->
+      <div class="page-title-overlap bg-dark pt-4">
+        <div class="container d-sm-flex justify-content-between align-items-center py-2 py-lg-3">
+          <div class="order-sm-2 mb-sm-0 mb-2 pt-lg-2">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb breadcrumb-light flex-lg-nowrap ">
+                <li class="breadcrumb-item"><a class="text-nowrap" href="index.html"><i class="ci-home"></i>Home</a></li>
+                <li class="breadcrumb-item text-nowrap"><a href="javascript:;">Shop</a>
+                </li>
+                <li class="breadcrumb-item text-nowrap active" aria-current="page">Categories</li>
+              </ol>
+            </nav>
+          </div>
+          <div class="order-sm-1 pt-sm-0 pt-2">
+            <h1 class="h3 text-light mb-0 mainproductheading">Shop Categories</h1>
+          </div>
+        </div>
+      </div>
+      <div class="container pb-5 mb-2 mb-md-4">
+        <div class="row">
+          <!-- Sidebar-->
+          <aside class="col-lg-4">
+            <!-- Sidebar-->
+            <div class="offcanvas offcanvas-collapse bg-white w-100 rounded-3 shadow-lg py-1" id="shop-sidebar" style="max-width: 22rem;">
+              <div class="offcanvas-header align-items-center shadow-sm">
+                <h2 class="h5 mb-0">Filters</h2>
+                <button class="btn-close ms-auto" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body py-grid-gutter px-lg-grid-gutter">
+                <!-- Categories-->
+                <div class="widget widget-categories mb-4 pb-4 border-bottom">
+                  <h3 class="widget-title">Categories</h3>
+                  <div class="accordion mt-n1" id="shop-categories">
+                    <!-- In Stock COVID-19 Supplies -->
+                    <div class="accordion-item">
+                      <h3 class="accordion-header"><a class="accordion-button  collapsed" href="#supplies" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="supplies">In Stock COVID-19 Supplies</a></h3>
+                      <div class="accordion-collapse collapse" id="supplies" data-bs-parent="#shop-categories">
+                        <div class="accordion-body">
+                          <div class="widget widget-links widget-filter">
+                            <div class="input-group input-group-sm mb-2">
+                              <input class="widget-filter-search form-control rounded-end" type="text" placeholder="Search"><i class="ci-search position-absolute top-50 end-0 translate-middle-y fs-sm me-3"></i>
+                            </div>
+                            <ul class="widget-list widget-filter-list pt-1" style="height: 9rem;" data-simplebar data-simplebar-auto-hide="false">
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">View all</span><span class="fs-xs text-muted ms-3">700</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie1</span><span class="fs-xs text-muted ms-3">247</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie2</span><span class="fs-xs text-muted ms-3">119</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie3</span><span class="fs-xs text-muted ms-3">84</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie4</span><span class="fs-xs text-muted ms-3">149</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie5</span><span class="fs-xs text-muted ms-3">101</span></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Top Sellers -->
+                    <div class="accordion-item">
+                      <h3 class="accordion-header"><a class="accordion-button  collapsed" href="#sellers" role="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="sellers">Top Sellers</a></h3>
+                      <div class="accordion-collapse collapse" id="sellers" data-bs-parent="#shop-categories">
+                        <div class="accordion-body">
+                          <div class="widget widget-links widget-filter">
+                            <div class="input-group input-group-sm mb-2">
+                              <input class="widget-filter-search form-control rounded-end" type="text" placeholder="Search"><i class="ci-search position-absolute top-50 end-0 translate-middle-y fs-sm me-3"></i>
+                            </div>
+                            <ul class="widget-list widget-filter-list pt-1" style="height: 9rem;" data-simplebar data-simplebar-auto-hide="false">
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">View all</span><span class="fs-xs text-muted ms-3">700</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie1</span><span class="fs-xs text-muted ms-3">247</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie2</span><span class="fs-xs text-muted ms-3">119</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie3</span><span class="fs-xs text-muted ms-3">84</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie4</span><span class="fs-xs text-muted ms-3">149</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie5</span><span class="fs-xs text-muted ms-3">101</span></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- A+ Choice Products -->
+                    <div class="accordion-item">
+                      <h3 class="accordion-header"><a class="accordion-button  collapsed" href="#choiceproduct" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="choiceproduct">A+ Choice Products</a></h3>
+                      <div class="collapse show" id="choiceproduct" data-bs-parent="#shop-categories">
+                        <div class="accordion-body">
+                          <div class="widget widget-links widget-filter">
+                            <div class="input-group input-group-sm mb-2">
+                              <input class="widget-filter-search form-control rounded-end" type="text" placeholder="Search"><i class="ci-search position-absolute top-50 end-0 translate-middle-y fs-sm me-3"></i>
+                            </div>
+                            <ul class="widget-list widget-filter-list pt-1" style="height: 9rem;" data-simplebar data-simplebar-auto-hide="false">
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">View all</span><span class="fs-xs text-muted ms-3">700</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie1</span><span class="fs-xs text-muted ms-3">247</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie2</span><span class="fs-xs text-muted ms-3">119</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie3</span><span class="fs-xs text-muted ms-3">84</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie4</span><span class="fs-xs text-muted ms-3">149</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie5</span><span class="fs-xs text-muted ms-3">101</span></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Web Only-->
+                    <div class="accordion-item">
+                      <h3 class="accordion-header"><a class="accordion-button collapsed" href="#webonly" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="webonly">Web Only</a></h3>
+                      <div class="accordion-collapse collapse" id="webonly" data-bs-parent="#shop-categories">
+                        <div class="accordion-body">
+                          <div class="widget widget-links widget-filter">
+                            <div class="input-group input-group-sm mb-2">
+                              <input class="widget-filter-search form-control rounded-end" type="text" placeholder="Search"><i class="ci-search position-absolute top-50 end-0 translate-middle-y fs-sm me-3"></i>
+                            </div>
+                            <ul class="widget-list widget-filter-list pt-1" style="height: 9rem;" data-simplebar data-simplebar-auto-hide="false">
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">View all</span><span class="fs-xs text-muted ms-3">700</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie1</span><span class="fs-xs text-muted ms-3">247</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie2</span><span class="fs-xs text-muted ms-3">119</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie3</span><span class="fs-xs text-muted ms-3">84</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie4</span><span class="fs-xs text-muted ms-3">149</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie5</span><span class="fs-xs text-muted ms-3">101</span></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Bandages-->
+                    <div class="accordion-item">
+                      <h3 class="accordion-header"><a class="accordion-button  collapsed" href="#bandages" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="bandages">Bandages</a></h3>
+                      <div class="accordion-collapse collapse" id="bandages" data-bs-parent="#shop-categories">
+                        <div class="accordion-body">
+                          <div class="widget widget-links widget-filter">
+                            <div class="input-group input-group-sm mb-2">
+                              <input class="widget-filter-search form-control rounded-end" type="text" placeholder="Search"><i class="ci-search position-absolute top-50 end-0 translate-middle-y fs-sm me-3"></i>
+                            </div>
+                            <ul class="widget-list widget-filter-list pt-1" style="height: 9rem;" data-simplebar data-simplebar-auto-hide="false">
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">View all</span><span class="fs-xs text-muted ms-3">700</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie1</span><span class="fs-xs text-muted ms-3">247</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie2</span><span class="fs-xs text-muted ms-3">119</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie3</span><span class="fs-xs text-muted ms-3">84</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie4</span><span class="fs-xs text-muted ms-3">149</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie5</span><span class="fs-xs text-muted ms-3">101</span></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- First Aid & Wound Care-->
+                    <div class="accordion-item">
+                      <h3 class="accordion-header"><a class="accordion-button  collapsed" href="#firstadd" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="firstadd">First Aid & Wound Care</a></h3>
+                      <div class="accordion-collapse collapse" id="firstadd" data-bs-parent="#shop-categories">
+                        <div class="accordion-body">
+                          <div class="widget widget-links widget-filter">
+                            <div class="input-group input-group-sm mb-2">
+                              <input class="widget-filter-search form-control rounded-end" type="text" placeholder="Search"><i class="ci-search position-absolute top-50 end-0 translate-middle-y fs-sm me-3"></i>
+                            </div>
+                            <ul class="widget-list widget-filter-list pt-1" style="height: 9rem;" data-simplebar data-simplebar-auto-hide="false">
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">View all</span><span class="fs-xs text-muted ms-3">700</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie1</span><span class="fs-xs text-muted ms-3">247</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie2</span><span class="fs-xs text-muted ms-3">119</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie3</span><span class="fs-xs text-muted ms-3">84</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie4</span><span class="fs-xs text-muted ms-3">149</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie5</span><span class="fs-xs text-muted ms-3">101</span></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Emergency Response & Safety -->
+                    <div class="accordion-item">
+                      <h3 class="accordion-header"><a class="accordion-button  collapsed" href="#emergency" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="emergency">Emergency Response & Safety</a></h3>
+                      <div class="accordion-collapse collapse" id="emergency" data-bs-parent="#shop-categories">
+                        <div class="accordion-body">
+                          <div class="widget widget-links widget-filter">
+                            <div class="input-group input-group-sm mb-2">
+                              <input class="widget-filter-search form-control rounded-end" type="text" placeholder="Search"><i class="ci-search position-absolute top-50 end-0 translate-middle-y fs-sm me-3"></i>
+                            </div>
+                            <ul class="widget-list widget-filter-list pt-1" style="height: 9rem;" data-simplebar data-simplebar-auto-hide="false">
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">View all</span><span class="fs-xs text-muted ms-3">700</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie1</span><span class="fs-xs text-muted ms-3">247</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie2</span><span class="fs-xs text-muted ms-3">119</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie3</span><span class="fs-xs text-muted ms-3">84</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie4</span><span class="fs-xs text-muted ms-3">149</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie5</span><span class="fs-xs text-muted ms-3">101</span></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- General Health & Non-Prescription -->
+                    <div class="accordion-item">
+                      <h3 class="accordion-header"><a class="accordion-button collapsed" href="#generalHealth" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="generalHealth">General Health & Non-Prescription </a></h3>
+                      <div class="accordion-collapse collapse" id="generalHealth" data-bs-parent="#shop-categories">
+                        <div class="accordion-body">
+                          <div class="widget widget-links widget-filter">
+                            <div class="input-group input-group-sm mb-2">
+                              <input class="widget-filter-search form-control rounded-end" type="text" placeholder="Search"><i class="ci-search position-absolute top-50 end-0 translate-middle-y fs-sm me-3"></i>
+                            </div>
+                            <ul class="widget-list widget-filter-list pt-1" style="height: 9rem;" data-simplebar data-simplebar-auto-hide="false">
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">View all</span><span class="fs-xs text-muted ms-3">700</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie1</span><span class="fs-xs text-muted ms-3">247</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie2</span><span class="fs-xs text-muted ms-3">119</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie3</span><span class="fs-xs text-muted ms-3">84</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie4</span><span class="fs-xs text-muted ms-3">149</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie5</span><span class="fs-xs text-muted ms-3">101</span></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Instruments -->
+                    <div class="accordion-item">
+                      <h3 class="accordion-header"><a class="accordion-button  collapsed" href="#instruments" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="instruments">Instruments</a></h3>
+                      <div class="accordion-collapse collapse" id="instruments" data-bs-parent="#shop-categories">
+                        <div class="accordion-body">
+                          <div class="widget widget-links widget-filter">
+                            <div class="input-group input-group-sm mb-2">
+                              <input class="widget-filter-search form-control rounded-end" type="text" placeholder="Search"><i class="ci-search position-absolute top-50 end-0 translate-middle-y fs-sm me-3"></i>
+                            </div>
+                            <ul class="widget-list widget-filter-list pt-1" style="height: 9rem;" data-simplebar data-simplebar-auto-hide="false">
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">View all</span><span class="fs-xs text-muted ms-3">700</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie1</span><span class="fs-xs text-muted ms-3">247</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie2</span><span class="fs-xs text-muted ms-3">119</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie3</span><span class="fs-xs text-muted ms-3">84</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie4</span><span class="fs-xs text-muted ms-3">149</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie5</span><span class="fs-xs text-muted ms-3">101</span></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Paper, Plastic & Linen -->
+                    <div class="accordion-item">
+                      <h3 class="accordion-header"><a class="accordion-button  collapsed" href="#paper" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="paper">Paper, Plastic & Linen</a></h3>
+                      <div class="accordion-collapse collapse" id="paper" data-bs-parent="#shop-categories">
+                        <div class="accordion-body">
+                          <div class="widget widget-links widget-filter">
+                            <div class="input-group input-group-sm mb-2">
+                              <input class="widget-filter-search form-control rounded-end" type="text" placeholder="Search"><i class="ci-search position-absolute top-50 end-0 translate-middle-y fs-sm me-3"></i>
+                            </div>
+                            <ul class="widget-list widget-filter-list pt-1" style="height: 9rem;" data-simplebar data-simplebar-auto-hide="false">
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">View all</span><span class="fs-xs text-muted ms-3">700</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie1</span><span class="fs-xs text-muted ms-3">247</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie2</span><span class="fs-xs text-muted ms-3">119</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie3</span><span class="fs-xs text-muted ms-3">84</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie4</span><span class="fs-xs text-muted ms-3">149</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie5</span><span class="fs-xs text-muted ms-3">101</span></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Cleaning & Infection Control -->
+                    <div class="accordion-item">
+                      <h3 class="accordion-header"><a class="accordion-button  collapsed" href="#cleaning" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="cleaning">Cleaning & Infection Control</a></h3>
+                      <div class="accordion-collapse collapse" id="cleaning" data-bs-parent="#shop-categories">
+                        <div class="accordion-body">
+                          <div class="widget widget-links widget-filter">
+                            <div class="input-group input-group-sm mb-2">
+                              <input class="widget-filter-search form-control rounded-end" type="text" placeholder="Search"><i class="ci-search position-absolute top-50 end-0 translate-middle-y fs-sm me-3"></i>
+                            </div>
+                            <ul class="widget-list widget-filter-list pt-1" style="height: 9rem;" data-simplebar data-simplebar-auto-hide="false">
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">View all</span><span class="fs-xs text-muted ms-3">700</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie1</span><span class="fs-xs text-muted ms-3">247</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie2</span><span class="fs-xs text-muted ms-3">119</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie3</span><span class="fs-xs text-muted ms-3">84</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie4</span><span class="fs-xs text-muted ms-3">149</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie5</span><span class="fs-xs text-muted ms-3">101</span></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Gloves & PPE -->
+                    <div class="accordion-item">
+                      <h3 class="accordion-header"><a class="accordion-button  collapsed" href="#glovesppe" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="glovesppe">Gloves & PPE</a></h3>
+                      <div class="accordion-collapse collapse" id="glovesppe" data-bs-parent="#shop-categories">
+                        <div class="accordion-body">
+                          <div class="widget widget-links widget-filter">
+                            <div class="input-group input-group-sm mb-2">
+                              <input class="widget-filter-search form-control rounded-end" type="text" placeholder="Search"><i class="ci-search position-absolute top-50 end-0 translate-middle-y fs-sm me-3"></i>
+                            </div>
+                            <ul class="widget-list widget-filter-list pt-1" style="height: 9rem;" data-simplebar data-simplebar-auto-hide="false">
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">View all</span><span class="fs-xs text-muted ms-3">700</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie1</span><span class="fs-xs text-muted ms-3">247</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie2</span><span class="fs-xs text-muted ms-3">119</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie3</span><span class="fs-xs text-muted ms-3">84</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie4</span><span class="fs-xs text-muted ms-3">149</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie5</span><span class="fs-xs text-muted ms-3">101</span></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Thermometry -->
+                    <div class="accordion-item">
+                      <h3 class="accordion-header"><a class="accordion-button  collapsed" href="#thermometry" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="thermometry">Thermometry</a></h3>
+                      <div class="accordion-collapse collapse" id="thermometry" data-bs-parent="#shop-categories">
+                        <div class="accordion-body">
+                          <div class="widget widget-links widget-filter">
+                            <div class="input-group input-group-sm mb-2">
+                              <input class="widget-filter-search form-control rounded-end" type="text" placeholder="Search"><i class="ci-search position-absolute top-50 end-0 translate-middle-y fs-sm me-3"></i>
+                            </div>
+                            <ul class="widget-list widget-filter-list pt-1" style="height: 9rem;" data-simplebar data-simplebar-auto-hide="false">
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">View all</span><span class="fs-xs text-muted ms-3">700</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie1</span><span class="fs-xs text-muted ms-3">247</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie2</span><span class="fs-xs text-muted ms-3">119</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie3</span><span class="fs-xs text-muted ms-3">84</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie4</span><span class="fs-xs text-muted ms-3">149</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie5</span><span class="fs-xs text-muted ms-3">101</span></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Respiratory & CPR -->
+                    <div class="accordion-item">
+                      <h3 class="accordion-header"><a class="accordion-button  collapsed" href="#respiratory" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="respiratory">Respiratory & CPR</a></h3>
+                      <div class="accordion-collapse collapse" id="respiratory" data-bs-parent="#shop-categories">
+                        <div class="accordion-body">
+                          <div class="widget widget-links widget-filter">
+                            <div class="input-group input-group-sm mb-2">
+                              <input class="widget-filter-search form-control rounded-end" type="text" placeholder="Search"><i class="ci-search position-absolute top-50 end-0 translate-middle-y fs-sm me-3"></i>
+                            </div>
+                            <ul class="widget-list widget-filter-list pt-1" style="height: 9rem;" data-simplebar data-simplebar-auto-hide="false">
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">View all</span><span class="fs-xs text-muted ms-3">700</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie1</span><span class="fs-xs text-muted ms-3">247</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie2</span><span class="fs-xs text-muted ms-3">119</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie3</span><span class="fs-xs text-muted ms-3">84</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie4</span><span class="fs-xs text-muted ms-3">149</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie5</span><span class="fs-xs text-muted ms-3">101</span></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Diagnostic -->
+                    <div class="accordion-item">
+                      <h3 class="accordion-header"><a class="accordion-button  collapsed" href="#diagnostic" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="diagnostic">Diagnostic</a></h3>
+                      <div class="accordion-collapse collapse" id="diagnostic" data-bs-parent="#shop-categories">
+                        <div class="accordion-body">
+                          <div class="widget widget-links widget-filter">
+                            <div class="input-group input-group-sm mb-2">
+                              <input class="widget-filter-search form-control rounded-end" type="text" placeholder="Search"><i class="ci-search position-absolute top-50 end-0 translate-middle-y fs-sm me-3"></i>
+                            </div>
+                            <ul class="widget-list widget-filter-list pt-1" style="height: 9rem;" data-simplebar data-simplebar-auto-hide="false">
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">View all</span><span class="fs-xs text-muted ms-3">700</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie1</span><span class="fs-xs text-muted ms-3">247</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie2</span><span class="fs-xs text-muted ms-3">119</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie3</span><span class="fs-xs text-muted ms-3">84</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie4</span><span class="fs-xs text-muted ms-3">149</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie5</span><span class="fs-xs text-muted ms-3">101</span></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Special Needs -->
+                    <div class="accordion-item">
+                      <h3 class="accordion-header"><a class="accordion-button  collapsed" href="#specialneeds" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="specialneeds">Special Needs</a></h3>
+                      <div class="accordion-collapse collapse" id="specialneeds" data-bs-parent="#shop-categories">
+                        <div class="accordion-body">
+                          <div class="widget widget-links widget-filter">
+                            <div class="input-group input-group-sm mb-2">
+                              <input class="widget-filter-search form-control rounded-end" type="text" placeholder="Search"><i class="ci-search position-absolute top-50 end-0 translate-middle-y fs-sm me-3"></i>
+                            </div>
+                            <ul class="widget-list widget-filter-list pt-1" style="height: 9rem;" data-simplebar data-simplebar-auto-hide="false">
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">View all</span><span class="fs-xs text-muted ms-3">700</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie1</span><span class="fs-xs text-muted ms-3">247</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie2</span><span class="fs-xs text-muted ms-3">119</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie3</span><span class="fs-xs text-muted ms-3">84</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie4</span><span class="fs-xs text-muted ms-3">149</span></a></li>
+                              <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="javascript:;"><span class="widget-filter-item-text">Categorie5</span><span class="fs-xs text-muted ms-3">101</span></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- ******** -->
+                  </div>
+                </div>
+                <!-- Price range-->
+                <div class="widget mb4 pb4 borderbottom">
+                  <h3 class="widget-title">Price</h3>
+                  <div class="range-slider" data-start-min="250" data-start-max="680" data-min="0" data-max="1000" data-step="1">
+                    <div class="range-slider-ui"></div>
+                    <div class="d-flex pb-1">
+                      <div class="w-50 pe-2 me-2">
+                        <div class="input-group input-group-sm"><span class="input-group-text">$</span>
+                          <input class="form-control range-slider-value-min" type="text">
+                        </div>
+                      </div>
+                      <div class="w-50 ps-2">
+                        <div class="input-group input-group-sm"><span class="input-group-text">$</span>
+                          <input class="form-control range-slider-value-max" type="text">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Filter by Brand-->
+                <!-- <div class="widget widget-filter mb-4 pb-4 border-bottom">
+                  <h3 class="widget-title">Brand</h3>
+                  <div class="input-group input-group-sm mb-2">
+                    <input class="widget-filter-search form-control rounded-end pe-5" type="text" placeholder="Search"><i class="ci-search position-absolute top-50 end-0 translate-middle-y fs-sm me-3"></i>
+                  </div>
+                  <ul class="widget-list widget-filter-list list-unstyled pt-1" style="max-height: 11rem;" data-simplebar data-simplebar-auto-hide="false">
+                    <li class="widget-filter-item d-flex justify-content-between align-items-center mb-1">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="adidas">
+                        <label class="form-check-label widget-filter-item-text" for="adidas">Adidas</label>
+                      </div><span class="fs-xs text-muted">425</span>
+                    </li>
+                    <li class="widget-filter-item d-flex justify-content-between align-items-center mb-1">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="ataylor">
+                        <label class="form-check-label widget-filter-item-text" for="ataylor">Ann Taylor</label>
+                      </div><span class="fs-xs text-muted">15</span>
+                    </li>
+                    <li class="widget-filter-item d-flex justify-content-between align-items-center mb-1">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="armani">
+                        <label class="form-check-label widget-filter-item-text" for="armani">Armani</label>
+                      </div><span class="fs-xs text-muted">18</span>
+                    </li>
+                    <li class="widget-filter-item d-flex justify-content-between align-items-center mb-1">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="banana">
+                        <label class="form-check-label widget-filter-item-text" for="banana">Banana Republic</label>
+                      </div><span class="fs-xs text-muted">103</span>
+                    </li>
+                    <li class="widget-filter-item d-flex justify-content-between align-items-center mb-1">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="bilabong">
+                        <label class="form-check-label widget-filter-item-text" for="bilabong">Bilabong</label>
+                      </div><span class="fs-xs text-muted">27</span>
+                    </li>
+                    <li class="widget-filter-item d-flex justify-content-between align-items-center mb-1">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="birkenstock">
+                        <label class="form-check-label widget-filter-item-text" for="birkenstock">Birkenstock</label>
+                      </div><span class="fs-xs text-muted">10</span>
+                    </li>
+                    <li class="widget-filter-item d-flex justify-content-between align-items-center mb-1">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="klein">
+                        <label class="form-check-label widget-filter-item-text" for="klein">Calvin Klein</label>
+                      </div><span class="fs-xs text-muted">365</span>
+                    </li>
+                    <li class="widget-filter-item d-flex justify-content-between align-items-center mb-1">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="columbia">
+                        <label class="form-check-label widget-filter-item-text" for="columbia">Columbia</label>
+                      </div><span class="fs-xs text-muted">508</span>
+                    </li>
+                    <li class="widget-filter-item d-flex justify-content-between align-items-center mb-1">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="converse">
+                        <label class="form-check-label widget-filter-item-text" for="converse">Converse</label>
+                      </div><span class="fs-xs text-muted">176</span>
+                    </li>
+                    <li class="widget-filter-item d-flex justify-content-between align-items-center mb-1">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="dockers">
+                        <label class="form-check-label widget-filter-item-text" for="dockers">Dockers</label>
+                      </div><span class="fs-xs text-muted">54</span>
+                    </li>
+                    <li class="widget-filter-item d-flex justify-content-between align-items-center mb-1">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="fruit">
+                        <label class="form-check-label widget-filter-item-text" for="fruit">Fruit of the Loom</label>
+                      </div><span class="fs-xs text-muted">739</span>
+                    </li>
+                    <li class="widget-filter-item d-flex justify-content-between align-items-center mb-1">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="hanes">
+                        <label class="form-check-label widget-filter-item-text" for="hanes">Hanes</label>
+                      </div><span class="fs-xs text-muted">92</span>
+                    </li>
+                    <li class="widget-filter-item d-flex justify-content-between align-items-center mb-1">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="choo">
+                        <label class="form-check-label widget-filter-item-text" for="choo">Jimmy Choo</label>
+                      </div><span class="fs-xs text-muted">17</span>
+                    </li>
+                    <li class="widget-filter-item d-flex justify-content-between align-items-center mb-1">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="levis">
+                        <label class="form-check-label widget-filter-item-text" for="levis">Levi's</label>
+                      </div><span class="fs-xs text-muted">361</span>
+                    </li>
+                    <li class="widget-filter-item d-flex justify-content-between align-items-center mb-1">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="lee">
+                        <label class="form-check-label widget-filter-item-text" for="lee">Lee</label>
+                      </div><span class="fs-xs text-muted">264</span>
+                    </li>
+                    <li class="widget-filter-item d-flex justify-content-between align-items-center mb-1">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="wearhouse">
+                        <label class="form-check-label widget-filter-item-text" for="wearhouse">Men's Wearhouse</label>
+                      </div><span class="fs-xs text-muted">75</span>
+                    </li>
+                    <li class="widget-filter-item d-flex justify-content-between align-items-center mb-1">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="newbalance">
+                        <label class="form-check-label widget-filter-item-text" for="newbalance">New Balance</label>
+                      </div><span class="fs-xs text-muted">218</span>
+                    </li>
+                    <li class="widget-filter-item d-flex justify-content-between align-items-center mb-1">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="nike">
+                        <label class="form-check-label widget-filter-item-text" for="nike">Nike</label>
+                      </div><span class="fs-xs text-muted">810</span>
+                    </li>
+                    <li class="widget-filter-item d-flex justify-content-between align-items-center mb-1">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="navy">
+                        <label class="form-check-label widget-filter-item-text" for="navy">Old Navy</label>
+                      </div><span class="fs-xs text-muted">147</span>
+                    </li>
+                    <li class="widget-filter-item d-flex justify-content-between align-items-center mb-1">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="polo">
+                        <label class="form-check-label widget-filter-item-text" for="polo">Polo Ralph Lauren</label>
+                      </div><span class="fs-xs text-muted">64</span>
+                    </li>
+                    <li class="widget-filter-item d-flex justify-content-between align-items-center mb-1">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="puma">
+                        <label class="form-check-label widget-filter-item-text" for="puma">Puma</label>
+                      </div><span class="fs-xs text-muted">370</span>
+                    </li>
+                    <li class="widget-filter-item d-flex justify-content-between align-items-center mb-1">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="reebok">
+                        <label class="form-check-label widget-filter-item-text" for="reebok">Reebok</label>
+                      </div><span class="fs-xs text-muted">506</span>
+                    </li>
+                    <li class="widget-filter-item d-flex justify-content-between align-items-center mb-1">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="skechers">
+                        <label class="form-check-label widget-filter-item-text" for="skechers">Skechers</label>
+                      </div><span class="fs-xs text-muted">209</span>
+                    </li>
+                    <li class="widget-filter-item d-flex justify-content-between align-items-center mb-1">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="hilfiger">
+                        <label class="form-check-label widget-filter-item-text" for="hilfiger">Tommy Hilfiger</label>
+                      </div><span class="fs-xs text-muted">487</span>
+                    </li>
+                    <li class="widget-filter-item d-flex justify-content-between align-items-center mb-1">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="armour">
+                        <label class="form-check-label widget-filter-item-text" for="armour">Under Armour</label>
+                      </div><span class="fs-xs text-muted">90</span>
+                    </li>
+                    <li class="widget-filter-item d-flex justify-content-between align-items-center mb-1">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="urban">
+                        <label class="form-check-label widget-filter-item-text" for="urban">Urban Outfitters</label>
+                      </div><span class="fs-xs text-muted">152</span>
+                    </li>
+                    <li class="widget-filter-item d-flex justify-content-between align-items-center mb-1">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="vsecret">
+                        <label class="form-check-label widget-filter-item-text" for="vsecret">Victoria's Secret</label>
+                      </div><span class="fs-xs text-muted">238</span>
+                    </li>
+                    <li class="widget-filter-item d-flex justify-content-between align-items-center mb-1">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="wolverine">
+                        <label class="form-check-label widget-filter-item-text" for="wolverine">Wolverine</label>
+                      </div><span class="fs-xs text-muted">29</span>
+                    </li>
+                    <li class="widget-filter-item d-flex justify-content-between align-items-center">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="wrangler">
+                        <label class="form-check-label widget-filter-item-text" for="wrangler">Wrangler</label>
+                      </div><span class="fs-xs text-muted">115</span>
+                    </li>
+                  </ul>
+                </div> -->
+                <!-- Filter by Size-->
+                <!-- <div class="widget widget-filter mb-4 pb-4 border-bottom">
+                  <h3 class="widget-title">Size</h3>
+                  <div class="input-group input-group-sm mb-2">
+                    <input class="widget-filter-search form-control rounded-end pe-5" type="text" placeholder="Search"><i class="ci-search position-absolute top-50 end-0 translate-middle-y fs-sm me-3"></i>
+                  </div>
+                  <ul class="widget-list widget-filter-list list-unstyled pt-1" style="max-height: 11rem;" data-simplebar data-simplebar-auto-hide="false">
+                    <li class="widget-filter-item d-flex justify-content-between align-items-center mb-1">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="size-xs">
+                        <label class="form-check-label widget-filter-item-text" for="size-xs">XS</label>
+                      </div><span class="fs-xs text-muted">34</span>
+                    </li>
+                    <li class="widget-filter-item d-flex justify-content-between align-items-center mb-1">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="size-s">
+                        <label class="form-check-label widget-filter-item-text" for="size-s">S</label>
+                      </div><span class="fs-xs text-muted">57</span>
+                    </li>
+                    <li class="widget-filter-item d-flex justify-content-between align-items-center mb-1">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="size-m">
+                        <label class="form-check-label widget-filter-item-text" for="size-m">M</label>
+                      </div><span class="fs-xs text-muted">198</span>
+                    </li>
+                    <li class="widget-filter-item d-flex justify-content-between align-items-center mb-1">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="size-l">
+                        <label class="form-check-label widget-filter-item-text" for="size-l">L</label>
+                      </div><span class="fs-xs text-muted">72</span>
+                    </li>
+                    <li class="widget-filter-item d-flex justify-content-between align-items-center mb-1">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="size-xl">
+                        <label class="form-check-label widget-filter-item-text" for="size-xl">XL</label>
+                      </div><span class="fs-xs text-muted">46</span>
+                    </li>
+                    <li class="widget-filter-item d-flex justify-content-between align-items-center mb-1">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="size-39">
+                        <label class="form-check-label widget-filter-item-text" for="size-39">39</label>
+                      </div><span class="fs-xs text-muted">112</span>
+                    </li>
+                    <li class="widget-filter-item d-flex justify-content-between align-items-center mb-1">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="size-40">
+                        <label class="form-check-label widget-filter-item-text" for="size-40">40</label>
+                      </div><span class="fs-xs text-muted">85</span>
+                    </li>
+                    <li class="widget-filter-item d-flex justify-content-between align-items-center mb-1">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="size-41">
+                        <label class="form-check-label widget-filter-item-text" for="size-40">41</label>
+                      </div><span class="fs-xs text-muted">210</span>
+                    </li>
+                    <li class="widget-filter-item d-flex justify-content-between align-items-center mb-1">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="size-42">
+                        <label class="form-check-label widget-filter-item-text" for="size-42">42</label>
+                      </div><span class="fs-xs text-muted">57</span>
+                    </li>
+                    <li class="widget-filter-item d-flex justify-content-between align-items-center mb-1">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="size-43">
+                        <label class="form-check-label widget-filter-item-text" for="size-43">43</label>
+                      </div><span class="fs-xs text-muted">30</span>
+                    </li>
+                    <li class="widget-filter-item d-flex justify-content-between align-items-center mb-1">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="size-44">
+                        <label class="form-check-label widget-filter-item-text" for="size-44">44</label>
+                      </div><span class="fs-xs text-muted">61</span>
+                    </li>
+                    <li class="widget-filter-item d-flex justify-content-between align-items-center mb-1">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="size-45">
+                        <label class="form-check-label widget-filter-item-text" for="size-45">45</label>
+                      </div><span class="fs-xs text-muted">23</span>
+                    </li>
+                    <li class="widget-filter-item d-flex justify-content-between align-items-center mb-1">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="size-46">
+                        <label class="form-check-label widget-filter-item-text" for="size-46">46</label>
+                      </div><span class="fs-xs text-muted">19</span>
+                    </li>
+                    <li class="widget-filter-item d-flex justify-content-between align-items-center mb-1">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="size-47">
+                        <label class="form-check-label widget-filter-item-text" for="size-47">47</label>
+                      </div><span class="fs-xs text-muted">15</span>
+                    </li>
+                    <li class="widget-filter-item d-flex justify-content-between align-items-center mb-1">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="size-48">
+                        <label class="form-check-label widget-filter-item-text" for="size-48">48</label>
+                      </div><span class="fs-xs text-muted">12</span>
+                    </li>
+                    <li class="widget-filter-item d-flex justify-content-between align-items-center mb-1">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="size-49">
+                        <label class="form-check-label widget-filter-item-text" for="size-49">49</label>
+                      </div><span class="fs-xs text-muted">8</span>
+                    </li>
+                    <li class="widget-filter-item d-flex justify-content-between align-items-center">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="size-50">
+                        <label class="form-check-label widget-filter-item-text" for="size-50">50</label>
+                      </div><span class="fs-xs text-muted">6</span>
+                    </li>
+                  </ul>
+                </div> -->
+                <!-- Filter by Color-->
+                <!-- <div class="widget">
+                  <h3 class="widget-title">Color</h3>
+                  <div class="d-flex flex-wrap">
+                    <div class="form-check form-option text-center mb-2 mx-1" style="width: 4rem;">
+                      <input class="form-check-input" type="checkbox" id="color-blue-gray">
+                      <label class="form-option-label rounded-circle" for="color-blue-gray"><span class="form-option-color rounded-circle" style="background-color: #b3c8db;"></span></label>
+                      <label class="d-block fs-xs text-muted mt-n1" for="color-blue-gray">Blue-gray</label>
+                    </div>
+                    <div class="form-check form-option text-center mb-2 mx-1" style="width: 4rem;">
+                      <input class="form-check-input" type="checkbox" id="color-burgundy">
+                      <label class="form-option-label rounded-circle" for="color-burgundy"><span class="form-option-color rounded-circle" style="background-color: #ca7295;"></span></label>
+                      <label class="d-block fs-xs text-muted mt-n1" for="color-burgundy">Burgundy</label>
+                    </div>
+                    <div class="form-check form-option text-center mb-2 mx-1" style="width: 4rem;">
+                      <input class="form-check-input" type="checkbox" id="color-teal">
+                      <label class="form-option-label rounded-circle" for="color-teal"><span class="form-option-color rounded-circle" style="background-color: #91c2c3;"></span></label>
+                      <label class="d-block fs-xs text-muted mt-n1" for="color-teal">Teal</label>
+                    </div>
+                    <div class="form-check form-option text-center mb-2 mx-1" style="width: 4rem;">
+                      <input class="form-check-input" type="checkbox" id="color-brown">
+                      <label class="form-option-label rounded-circle" for="color-brown"><span class="form-option-color rounded-circle" style="background-color: #9a8480;"></span></label>
+                      <label class="d-block fs-xs text-muted mt-n1" for="color-brown">Brown</label>
+                    </div>
+                    <div class="form-check form-option text-center mb-2 mx-1" style="width: 4rem;">
+                      <input class="form-check-input" type="checkbox" id="color-coral-red">
+                      <label class="form-option-label rounded-circle" for="color-coral-red"><span class="form-option-color rounded-circle" style="background-color: #ff7072;"></span></label>
+                      <label class="d-block fs-xs text-muted mt-n1" for="color-coral-red">Coral red</label>
+                    </div>
+                    <div class="form-check form-option text-center mb-2 mx-1" style="width: 4rem;">
+                      <input class="form-check-input" type="checkbox" id="color-navy">
+                      <label class="form-option-label rounded-circle" for="color-navy"><span class="form-option-color rounded-circle" style="background-color: #696dc8;"></span></label>
+                      <label class="d-block fs-xs text-muted mt-n1" for="color-navy">Navy</label>
+                    </div>
+                    <div class="form-check form-option text-center mb-2 mx-1" style="width: 4rem;">
+                      <input class="form-check-input" type="checkbox" id="color-charcoal">
+                      <label class="form-option-label rounded-circle" for="color-charcoal"><span class="form-option-color rounded-circle" style="background-color: #4e4d4d;"></span></label>
+                      <label class="d-block fs-xs text-muted mt-n1" for="color-charcoal">Charcoal</label>
+                    </div>
+                    <div class="form-check form-option text-center mb-2 mx-1" style="width: 4rem;">
+                      <input class="form-check-input" type="checkbox" id="color-sky-blue">
+                      <label class="form-option-label rounded-circle" for="color-sky-blue"><span class="form-option-color rounded-circle" style="background-color: #8bcdf5;"></span></label>
+                      <label class="d-block fs-xs text-muted mt-n1" for="color-sky-blue">Sky blue</label>
+                    </div>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </aside>
+          <!-- Content  -->
+          <section class="col-lg-8">
+            <!-- Toolbar-->
+            <div class="d-flex justify-content-between align-items-center pt-2 pb-4 pb-sm-5">
+              <div class="d-flex flex-wrap">
+                <div class="d-flex align-items-center flex-nowrap me-3 me-sm-4 pb-3">
+                  <label class="text-light opacity-75 text-nowrap fs-sm me-2 d-none d-sm-block" for="sorting">Sort by:</label>
+                  <select class="form-select" id="sorting">
+                    <option>Popularity</option>
+                    <option>Low - Hight Price</option>
+                    <option>High - Low Price</option>
+                    <option>Average Rating</option>
+                    <option>A - Z Order</option>
+                    <option>Z - A Order</option>
+                  </select><span class="fs-sm text-light opacity-75 text-nowrap ms-2 d-none d-md-block">of 287 products</span>
+                </div>
+              </div>
+              <div class="d-flex pb-3"><a class="nav-link-style nav-link-light me-sm-3 me-2" href="javascript:;"><i class="ci-arrow-left"></i></a><span class="fs-md text-light">1 / 5</span><a class="nav-link-style nav-link-light ms-sm-3 ms-2" href="javascript:;"><i class="ci-arrow-right"></i></a></div>
+              <!-- <div class="d-none d-sm-flex pb-3"><a class="btn btn-icon nav-link-style bg-light text-dark disabled opacity-100 me-2" href="javascript:;"><i class="ci-view-grid"></i></a><a class="btn btn-icon nav-link-style nav-link-light" href="shop-list-ls.html"><i class="ci-view-list"></i></a></div> -->
+            </div>
+            <!-- Products grid-->
+            <div class="row mx-n2">
+              <!-- Product-->
+              <div class="col-md-4 col-sm-6 px-2 mb-4 ">
+                <div class="card product-card border h-100 rounded-0">
+                  <button class="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to wishlist"><i class="ci-heart"></i></button><a class="card-img-top d-block overflow-hidden p-4 text-center" href="product-detail.html"><img src="images/product/product-1.png" alt="Product"></a>
+                  <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1" href="javascript:;">Mask</a>
+                    <h3 class="product-title fs-sm"><a href="product-detail.html">Kids KN95 Masks, Black, 50/Box</a></h3>
+                    <div class="d-flex justify-content-between mb-2">
+                      <div class="product-price"><span class="text-accent">$198.<small>00</small></span></div>
+                      <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star"></i>
+                      </div>
+                    </div>
+                    <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button"><i class="ci-cart fs-sm me-1"></i>Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Product-->
+              <div class="col-md-4 col-sm-6 px-2 mb-4 ">
+                <div class="card product-card border h-100 rounded-0">
+                  <button class="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to wishlist"><i class="ci-heart"></i></button><a class="card-img-top d-block overflow-hidden p-4 text-center" href="product-detail.html"><img src="images/product/product-2.png" alt="Product"></a>
+                  <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1" href="javascript:;">Soap</a>
+                    <h3 class="product-title fs-sm"><a href="product-detail.html">Dial® Liquid Soap, 7.5 Oz. Pump</a></h3>
+                    <div class="d-flex justify-content-between mb-2">
+                      <div class="product-price"><span class="text-accent">$98.<small>00</small></span></div>
+                      <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star"></i>
+                      </div>
+                    </div>
+                    <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button"><i class="ci-cart fs-sm me-1"></i>Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Product-->
+              <div class="col-md-4 col-sm-6 px-2 mb-4 ">
+                <div class="card product-card border h-100 rounded-0">
+                  <button class="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to wishlist"><i class="ci-heart"></i></button><a class="card-img-top d-block overflow-hidden p-4 text-center" href="product-detail.html"><img src="images/product/product-1.png" alt="Product"></a>
+                  <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1" href="javascript:;">Mask</a>
+                    <h3 class="product-title fs-sm"><a href="product-detail.html">Kids KN95 Masks, Black, 50/Box</a></h3>
+                    <div class="d-flex justify-content-between mb-2">
+                      <div class="product-price"><span class="text-accent">$198.<small>00</small></span></div>
+                      <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star"></i>
+                      </div>
+                    </div>
+                    <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button"><i class="ci-cart fs-sm me-1"></i>Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Product-->
+              <div class="col-md-4 col-sm-6 px-2 mb-4 ">
+                <div class="card product-card border h-100 rounded-0">
+                  <button class="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to wishlist"><i class="ci-heart"></i></button><a class="card-img-top d-block overflow-hidden p-4 text-center" href="product-detail.html"><img src="images/product/product-2.png" alt="Product"></a>
+                  <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1" href="javascript:;">Soap</a>
+                    <h3 class="product-title fs-sm"><a href="product-detail.html">Dial® Liquid Soap, 7.5 Oz. Pump</a></h3>
+                    <div class="d-flex justify-content-between mb-2">
+                      <div class="product-price"><span class="text-accent">$98.<small>00</small></span></div>
+                      <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star"></i>
+                      </div>
+                    </div>
+                    <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button"><i class="ci-cart fs-sm me-1"></i>Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Product-->
+              <div class="col-md-4 col-sm-6 px-2 mb-4 ">
+                <div class="card product-card border h-100 rounded-0">
+                  <button class="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to wishlist"><i class="ci-heart"></i></button><a class="card-img-top d-block overflow-hidden p-4 text-center" href="product-detail.html"><img src="images/product/product-1.png" alt="Product"></a>
+                  <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1" href="javascript:;">Mask</a>
+                    <h3 class="product-title fs-sm"><a href="product-detail.html">Kids KN95 Masks, Black, 50/Box</a></h3>
+                    <div class="d-flex justify-content-between mb-2">
+                      <div class="product-price"><span class="text-accent">$198.<small>00</small></span></div>
+                      <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star"></i>
+                      </div>
+                    </div>
+                    <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button"><i class="ci-cart fs-sm me-1"></i>Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Product-->
+              <div class="col-md-4 col-sm-6 px-2 mb-4 ">
+                <div class="card product-card border h-100 rounded-0">
+                  <button class="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to wishlist"><i class="ci-heart"></i></button><a class="card-img-top d-block overflow-hidden p-4 text-center" href="product-detail.html"><img src="images/product/product-2.png" alt="Product"></a>
+                  <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1" href="javascript:;">Soap</a>
+                    <h3 class="product-title fs-sm"><a href="product-detail.html">Dial® Liquid Soap, 7.5 Oz. Pump</a></h3>
+                    <div class="d-flex justify-content-between mb-2">
+                      <div class="product-price"><span class="text-accent">$98.<small>00</small></span></div>
+                      <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star"></i>
+                      </div>
+                    </div>
+                    <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button"><i class="ci-cart fs-sm me-1"></i>Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            <!-- Banner-->
+            <div class="py-sm-2">
+              <div class="d-sm-flex justify-content-between align-items-center bg-secondary overflow-hidden mb-4 rounded-3">
+                <div class="py-4 my-2 my-md-0 py-md-5 px-4 ms-md-3 text-center text-sm-start">
+                  <h4 class="fs-lg fw-light mb-2">Soap</h4>
+                  <h3 class="mb-4">Make Your Day Comfortable</h3><a class="btn btn-primary btn-shadow btn-sm" href="javascript:;">Shop Now</a>
+                </div><img class="d-block ms-auto" src="images/product/banner1.png" alt="Shop Converse">
+              </div>
+            </div>
+            <!-- Products grid-->
+            <div class="row mx-n2">
+              <!-- Product-->
+              <div class="col-md-4 col-sm-6 px-2 mb-4 ">
+                <div class="card product-card border h-100 rounded-0">
+                  <button class="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to wishlist"><i class="ci-heart"></i></button><a class="card-img-top d-block overflow-hidden p-4 text-center" href="product-detail.html"><img src="images/product/product-1.png" alt="Product"></a>
+                  <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1" href="javascript:;">Mask</a>
+                    <h3 class="product-title fs-sm"><a href="product-detail.html">Kids KN95 Masks, Black, 50/Box</a></h3>
+                    <div class="d-flex justify-content-between mb-2">
+                      <div class="product-price"><span class="text-accent">$198.<small>00</small></span></div>
+                      <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star"></i>
+                      </div>
+                    </div>
+                    <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button"><i class="ci-cart fs-sm me-1"></i>Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Product-->
+              <div class="col-md-4 col-sm-6 px-2 mb-4 ">
+                <div class="card product-card border h-100 rounded-0">
+                  <button class="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to wishlist"><i class="ci-heart"></i></button><a class="card-img-top d-block overflow-hidden p-4 text-center" href="product-detail.html"><img src="images/product/product-2.png" alt="Product"></a>
+                  <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1" href="javascript:;">Soap</a>
+                    <h3 class="product-title fs-sm"><a href="product-detail.html">Dial® Liquid Soap, 7.5 Oz. Pump</a></h3>
+                    <div class="d-flex justify-content-between mb-2">
+                      <div class="product-price"><span class="text-accent">$98.<small>00</small></span></div>
+                      <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star"></i>
+                      </div>
+                    </div>
+                    <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button"><i class="ci-cart fs-sm me-1"></i>Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Product-->
+              <div class="col-md-4 col-sm-6 px-2 mb-4 ">
+                <div class="card product-card border h-100 rounded-0">
+                  <button class="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to wishlist"><i class="ci-heart"></i></button><a class="card-img-top d-block overflow-hidden p-4 text-center" href="product-detail.html"><img src="images/product/product-1.png" alt="Product"></a>
+                  <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1" href="javascript:;">Mask</a>
+                    <h3 class="product-title fs-sm"><a href="product-detail.html">Kids KN95 Masks, Black, 50/Box</a></h3>
+                    <div class="d-flex justify-content-between mb-2">
+                      <div class="product-price"><span class="text-accent">$198.<small>00</small></span></div>
+                      <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star"></i>
+                      </div>
+                    </div>
+                    <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button"><i class="ci-cart fs-sm me-1"></i>Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Product-->
+              <div class="col-md-4 col-sm-6 px-2 mb-4 ">
+                <div class="card product-card border h-100 rounded-0">
+                  <button class="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to wishlist"><i class="ci-heart"></i></button><a class="card-img-top d-block overflow-hidden p-4 text-center" href="product-detail.html"><img src="images/product/product-2.png" alt="Product"></a>
+                  <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1" href="javascript:;">Soap</a>
+                    <h3 class="product-title fs-sm"><a href="product-detail.html">Dial® Liquid Soap, 7.5 Oz. Pump</a></h3>
+                    <div class="d-flex justify-content-between mb-2">
+                      <div class="product-price"><span class="text-accent">$98.<small>00</small></span></div>
+                      <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star"></i>
+                      </div>
+                    </div>
+                    <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button"><i class="ci-cart fs-sm me-1"></i>Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Product-->
+              <div class="col-md-4 col-sm-6 px-2 mb-4 ">
+                <div class="card product-card border h-100 rounded-0">
+                  <button class="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to wishlist"><i class="ci-heart"></i></button><a class="card-img-top d-block overflow-hidden p-4 text-center" href="product-detail.html"><img src="images/product/product-1.png" alt="Product"></a>
+                  <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1" href="javascript:;">Mask</a>
+                    <h3 class="product-title fs-sm"><a href="product-detail.html">Kids KN95 Masks, Black, 50/Box</a></h3>
+                    <div class="d-flex justify-content-between mb-2">
+                      <div class="product-price"><span class="text-accent">$198.<small>00</small></span></div>
+                      <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star"></i>
+                      </div>
+                    </div>
+                    <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button"><i class="ci-cart fs-sm me-1"></i>Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Product-->
+              <div class="col-md-4 col-sm-6 px-2 mb-4 ">
+                <div class="card product-card border h-100 rounded-0">
+                  <button class="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to wishlist"><i class="ci-heart"></i></button><a class="card-img-top d-block overflow-hidden p-4 text-center" href="product-detail.html"><img src="images/product/product-2.png" alt="Product"></a>
+                  <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1" href="javascript:;">Soap</a>
+                    <h3 class="product-title fs-sm"><a href="product-detail.html">Dial® Liquid Soap, 7.5 Oz. Pump</a></h3>
+                    <div class="d-flex justify-content-between mb-2">
+                      <div class="product-price"><span class="text-accent">$98.<small>00</small></span></div>
+                      <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star"></i>
+                      </div>
+                    </div>
+                    <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button"><i class="ci-cart fs-sm me-1"></i>Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Product-->
+              <div class="col-md-4 col-sm-6 px-2 mb-4 ">
+                <div class="card product-card border h-100 rounded-0">
+                  <button class="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to wishlist"><i class="ci-heart"></i></button><a class="card-img-top d-block overflow-hidden p-4 text-center" href="product-detail.html"><img src="images/product/product-1.png" alt="Product"></a>
+                  <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1" href="javascript:;">Mask</a>
+                    <h3 class="product-title fs-sm"><a href="product-detail.html">Kids KN95 Masks, Black, 50/Box</a></h3>
+                    <div class="d-flex justify-content-between mb-2">
+                      <div class="product-price"><span class="text-accent">$198.<small>00</small></span></div>
+                      <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star"></i>
+                      </div>
+                    </div>
+                    <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button"><i class="ci-cart fs-sm me-1"></i>Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Product-->
+              <div class="col-md-4 col-sm-6 px-2 mb-4 ">
+                <div class="card product-card border h-100 rounded-0">
+                  <button class="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to wishlist"><i class="ci-heart"></i></button><a class="card-img-top d-block overflow-hidden p-4 text-center" href="product-detail.html"><img src="images/product/product-2.png" alt="Product"></a>
+                  <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1" href="javascript:;">Soap</a>
+                    <h3 class="product-title fs-sm"><a href="product-detail.html">Dial® Liquid Soap, 7.5 Oz. Pump</a></h3>
+                    <div class="d-flex justify-content-between mb-2">
+                      <div class="product-price"><span class="text-accent">$98.<small>00</small></span></div>
+                      <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star"></i>
+                      </div>
+                    </div>
+                    <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button"><i class="ci-cart fs-sm me-1"></i>Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Product-->
+              <div class="col-md-4 col-sm-6 px-2 mb-4 ">
+                <div class="card product-card border h-100 rounded-0">
+                  <button class="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to wishlist"><i class="ci-heart"></i></button><a class="card-img-top d-block overflow-hidden p-4 text-center" href="product-detail.html"><img src="images/product/product-1.png" alt="Product"></a>
+                  <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1" href="javascript:;">Mask</a>
+                    <h3 class="product-title fs-sm"><a href="product-detail.html">Kids KN95 Masks, Black, 50/Box</a></h3>
+                    <div class="d-flex justify-content-between mb-2">
+                      <div class="product-price"><span class="text-accent">$198.<small>00</small></span></div>
+                      <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star"></i>
+                      </div>
+                    </div>
+                    <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button"><i class="ci-cart fs-sm me-1"></i>Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            <!-- Pagination-->
+            <nav class="d-flex justify-content-between pt-2" aria-label="Page navigation">
+              <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="javascript:;"><i class="ci-arrow-left me-2"></i>Prev</a></li>
+              </ul>
+              <ul class="pagination">
+                <li class="page-item d-sm-none"><span class="page-link page-link-static">1 / 5</span></li>
+                <li class="page-item active d-none d-sm-block" aria-current="page"><span class="page-link">1<span class="visually-hidden">(current)</span></span></li>
+                <li class="page-item d-none d-sm-block"><a class="page-link" href="javascript:;">2</a></li>
+                <li class="page-item d-none d-sm-block"><a class="page-link" href="javascript:;">3</a></li>
+                <li class="page-item d-none d-sm-block"><a class="page-link" href="javascript:;">4</a></li>
+                <li class="page-item d-none d-sm-block"><a class="page-link" href="javascript:;">5</a></li>
+              </ul>
+              <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="javascript:;" aria-label="Next">Next<i class="ci-arrow-right ms-2"></i></a></li>
+              </ul>
+            </nav>
+          </section>
+        </div>
+      </div>
+    </main>
+    <!-- Footer-->
+    <footer class="footer bg-dark">
+      <div class="py-sm-5 py-4 bg-darker">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-lg-3 col-sm-6">
+              <div class="d-lg-flex text-center text-lg-start">
+                <i class="ci-delivery text-primary" style="font-size: 2.25rem;"></i>
+                <div class="ps-lg-3">
+                  <h6 class="fs-base text-light mb-1">Fast and free delivery</h6>
+                  <p class="mb-0 fs-ms text-light opacity-50">Free delivery for all orders over $65</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="d-lg-flex text-center text-lg-start"><i class="ci-support text-primary" style="font-size: 2.25rem;"></i>
+                <div class="ps-lg-3">
+                  <h6 class="fs-base text-light mb-1">24/7 customer support</h6>
+                  <p class="mb-0 fs-ms text-light opacity-50">Friendly 24/7 customer support</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="d-lg-flex text-center text-lg-start"><i class="ci-currency-exchange text-primary" style="font-size: 2.25rem;"></i>
+                <div class="ps-lg-3">
+                  <h6 class="fs-base text-light mb-1">Money back guarantee</h6>
+                  <p class="mb-0 fs-ms text-light opacity-50">We return money within 30 days</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="d-lg-flex text-center text-lg-start"><i class="ci-card text-primary" style="font-size: 2.25rem;"></i>
+                <div class="ps-lg-3">
+                  <h6 class="fs-base text-light mb-1">Secure online payment</h6>
+                  <p class="mb-0 fs-ms text-light opacity-50">We possess SSL / Secure сertificate</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container py-sm-5 py-4">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="widget widget-links widget-light pb-2">
+              <div class="row g-4">
+                <div class="col-lg-12 col-sm-6">
+                  <a class="d-inline-block align-middle mt-n1 me-3" href="index.html">
+                    <img class="d-block" src="images/logo/logo-macgill-white.png" width="117" alt="MacGill">
+                  </a>
+                  <div class="footerAbout text-light text-opacity-75 fs-14 mt-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, molestiae.</div>
+                  <div class="mt-4 d-flex">
+                    <a class="btn-social bs-light bs-twitter mb-2" href="javascript:;">
+                      <i class="ci-twitter"></i>
+                    </a>
+                    <a class="btn-social bs-light bs-facebook ms-2 mb-2" href="javascript:;">
+                      <i class="ci-facebook"></i>
+                    </a>
+                    <a class="btn-social bs-light bs-instagram ms-2 mb-2" href="javascript:;">
+                      <i class="ci-instagram"></i>
+                    </a>
+                    <a class="btn-social bs-light bs-pinterest ms-2 mb-2" href="javascript:;">
+                      <i class="ci-pinterest"></i>
+                    </a>
+                    <a class="btn-social bs-light bs-youtube ms-2 mb-2" href="javascript:;">
+                      <i class="ci-youtube"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-12 col-sm-6">
+                  <div class="widget pb-2">
+                    <div class="h3 widget-title text-light pb-1 mb-2">All schools have instant credit</div>
+                    <img class="d-inline-block" src="img/cards-alt.png" width="240" alt="Payment methods">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="row g-4">
+              <div class="col-sm-6">
+                <div class="widget widget-links widget-light pb-2">
+                  <div class="h3 widget-title text-light">Menu</div>
+                  <ul class="widget-list">
+                    <li class="widget-list-item"><a class="widget-list-link" href="index.html">Home</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="javascript:;">About Us</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="javascript:;">Advanced Search</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="javascript:;">Recall Notices</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="javascript:;">Health & Nurse Links</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="widget widget-links widget-light pb-2">
+                  <h3 class="widget-title text-light">Policys</h3>
+                  <ul class="widget-list">
+                    <li class="widget-list-item"><a class="widget-list-link" href="javascript:;">Orders & Returns</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="javascript:;">Shipping & Tracking</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="javascript:;">Privacy Policy</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="javascript:;">Legal</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="javascript:;">Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="row g-4">
+              <div class="col-lg-12 col-sm-6">
+                <div class="widget widget-links widget-light pb-2">
+                  <div class="h3 widget-title text-light pb-1">Contact Us</div>
+                  <ul class="widget-list">
+                    <li class="widget-list-item d-flex gap-2"><i class="ci-location h6 mt-1 text-primary"></i><a class="widget-list-link"> 1000 N. Lombard Rd. Lombard, <br> Illinois 60148</a></li>
+                    <li class="widget-list-item d-flex align-items-md-center align-items-sm-baseline align-items-center gap-2"><i class="ci-phone h6 m-0 text-primary"></i><span class="d-inline-block"><a class="widget-list-link d-inline-block me-2" href="tel:1-800-323-2841">1-800-323-2841,</a><a class="widget-list-link d-inline-block" href="tel:1-800-727-3433">1-800-727-3433</a></span></li>
+                    <li class="widget-list-item"><a class="widget-list-link d-flex align-items-center gap-2" href="mailTo:macgill@macgill.com"><i class="ci-mail h6 m-0 text-primary"></i> macgill@macgill.com</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-12 col-sm-6">
+                <div class="widget pb-2">
+                  <div class="h3 widget-title text-light pb-1">NEWSLETTER</div>
+                  <form class="subscription-form validate" action="" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+                    <div class="input-group flex-nowrap"><i class="ci-mail position-absolute top-50 translate-middle-y text-muted fs-base ms-md-3 ms-2"></i>
+                      <input class="form-control rounded-start" type="email" name="EMAIL" placeholder="Your email" required>
+                      <button class="btn btn-primary btn-sm" type="submit" name="subscribe">Subscribe*</button>
+                    </div>
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                      <input class="subscription-form-antispam" type="text" name="b_c7103e2c981361a6639545bd5_29ca296126" tabindex="-1">
+                    </div>
+                    <div class="form-text text-light opacity-50">*Subscribe to our newsletter to receive early discount offers, updates and new products info.</div>
+                    <div class="subscription-status"></div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="widget pb-2 mb-4">
+              <div class="h3 widget-title text-light pb-1 mb-2">All schools have instant credit</div>
+              <img class="d-inline-block" src="img/cards-alt.png" width="240" alt="Payment methods">
+            </div> -->
+            <!-- <div class="widget pb-2 mb-4">
+              <h3 class="widget-title text-light pb-1">Download our app</h3>
+              <div class="d-flex flex-wrap">
+                <div class="me-2 mb-2"><a class="btn-market btn-apple" href="javascript:;" role="button"><span class="btn-market-subtitle">Download on the</span><span class="btn-market-title">App Store</span></a></div>
+                <div class="mb-2"><a class="btn-market btn-google" href="javascript:;" role="button"><span class="btn-market-subtitle">Download on the</span><span class="btn-market-title">Google Play</span></a></div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <div class="bg-darker">
+        <div class="container">
+          <div class="py-4 fs-xs text-light opacity-50 text-center">© 2023 MacGill School Nurse Supplies. All Rights Reserved. Made by <a class="text-light" href="javascript:;" target="_blank" rel="noopener">IMG Global Infotech</a></div>
+        </div>
+      </div>
+    </footer>
+    <!-- Toolbar for handheld devices (Shop)-->
+    <div class="handheld-toolbar">
+      <div class="d-table table-layout-fixed w-100"><a class="d-table-cell handheld-toolbar-item" href="javascript:;" data-bs-toggle="offcanvas" data-bs-target="#shop-sidebar"><span class="handheld-toolbar-icon"><i class="ci-filter-alt"></i></span><span class="handheld-toolbar-label">Filters</span></a><a class="d-table-cell handheld-toolbar-item" href="javascript:;"><span class="handheld-toolbar-icon"><i class="ci-heart"></i></span><span class="handheld-toolbar-label">Wishlist</span></a><a class="d-table-cell handheld-toolbar-item" href="javascript:;" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" onclick="window.scrollTo(0, 0)"><span class="handheld-toolbar-icon"><i class="ci-menu"></i></span><span class="handheld-toolbar-label">Menu</span></a><a class="d-table-cell handheld-toolbar-item" href="javascript:;"><span class="handheld-toolbar-icon"><i class="ci-cart"></i><span class="badge bg-primary rounded-pill ms-1">4</span></span><span class="handheld-toolbar-label">$265.00</span></a></div>
+    </div>
+    <!-- Back To Top Button--><a class="btn-scroll-top" href="#top" data-scroll><span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span><i class="btn-scroll-top-icon ci-arrow-up">   </i></a>
+    <!-- Vendor scrits: js libraries and plugins-->
+    <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/simplebar/dist/simplebar.min.js"></script>
+    <script src="vendor/tiny-slider/dist/min/tiny-slider.js"></script>
+    <script src="vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="vendor/nouislider/dist/nouislider.min.js"></script>
+    <script src="vendor/drift-zoom/dist/Drift.min.js"></script>
+    <!-- Main theme script-->
+    <script src="js/theme.min.js"></script>
+  </body>
+</html>
