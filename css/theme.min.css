@@ -17103,7 +17103,59 @@ html:not([dir="rtl"]) .range-slider-ui.noUi-horizontal .noUi-handle {
 .product-badge.product-not-available::after {
     border-color: rgba(243, 245, 249, 0);
     border-bottom-color: #d8deeb;
-}
+} 
+.totalProduct .quantity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  .totalProduct .quantity__minus,
+  .totalProduct .quantity__plus {
+    display: block;
+    width: 44px;
+    height: 44px;
+    margin: 0;
+    background-color: #dee0ee;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    transition: ease-in-out .3s;
+
+  }
+  .totalProduct .quantity__minus:hover,
+  .totalProduct .quantity__plus:hover {
+    background-color: var(--cz-primary);
+  } 
+  .totalProduct .quantity__minus {
+    border-radius: 3px 0 0 3px;
+  }
+  .totalProduct .quantity__plus {
+    border-radius: 0 3px 3px 0;
+  }
+  .totalProduct .quantity__input {
+    width: 50px;
+    height: 44px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    border: 0;
+    border-top: 2px solid #dee0ee;
+    border-bottom: 2px solid #dee0ee;
+    background: #fff;
+    color: #8184a1;
+  }
+  .totalProduct .quantity__minus:link,
+  .totalProduct .quantity__plus:link {
+    color: #8184a1;
+  } 
+  .totalProduct .quantity__minus:visited,
+  .totalProduct .quantity__plus:visited {
+    color: #fff;
+  }
 @media (max-width: 991.98px) {
     .product-badge {
         right: -0.75rem;
@@ -17959,4 +18011,29 @@ header .navbar-sticky .navbar .navbar-brand {
     .mainSliderDetail {
         padding: 16px !important;
     }
+    .totalProduct .quantity {
+      }
+      .totalProduct .quantity__minus,
+      .totalProduct .quantity__plus {
+        width: 30px;
+        height: 30px;
+    
+      }
+      .totalProduct .quantity__minus:hover,
+      .totalProduct .quantity__plus:hover {
+      } 
+      .totalProduct .quantity__minus {
+      }
+      .totalProduct .quantity__plus {
+      }
+      .totalProduct .quantity__input {
+        width: 30px;
+        height: 30px;
+      }
+      .totalProduct .quantity__minus:link,
+      .totalProduct .quantity__plus:link {
+      } 
+      .totalProduct .quantity__minus:visited,
+      .totalProduct .quantity__plus:visited {
+      }
 }
